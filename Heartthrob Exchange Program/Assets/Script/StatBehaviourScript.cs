@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class StatBehaviourScript : MonoBehaviour
 {
@@ -17,18 +18,19 @@ public class StatBehaviourScript : MonoBehaviour
     public int confidenceValue;
     public int appearanceValue;
 
-    //button variables
-    public GameObject workoutButton;
-    public GameObject studyButton;
-    public GameObject drawButton;
-    public GameObject fashionButton;
-    public GameObject socialiseButton;
-    public GameObject computerButton;
-    public GameObject restButton;
-    public GameObject languageButton;
-    public GameObject saveButton;
-    public GameObject notesButton;
-    public GameObject phoneButton;
+    //stat display variables
+    public TMP_Text stressText;
+    public TMP_Text academicsText;
+    public TMP_Text athleticsText;
+    public TMP_Text artsText;
+    public TMP_Text techText;
+    public TMP_Text cultureText;
+    public TMP_Text conversationText;
+    public TMP_Text confidenceText;
+    public TMP_Text appearanceText;
+
+    private DayManager dayManager;
+
 
     void Start()
     {
@@ -41,6 +43,9 @@ public class StatBehaviourScript : MonoBehaviour
         conversationalismValue = 5;
         confidenceValue = 15;
         appearanceValue = 55;
+        DisplayStat();
+
+        dayManager = FindObjectOfType<DayManager>();
     }
 
 
@@ -97,11 +102,26 @@ public class StatBehaviourScript : MonoBehaviour
             }
             statNumber++;
         }
+        DisplayStat();
+        dayManager.UpdateDay();
         
     }
 
 
-
+    public void DisplayStat()
+    {
+        stressText.text = stressValue.ToString();
+        academicsText.text = academicsValue.ToString();
+        athleticsText.text = athleticsValue.ToString();
+        artsText.text = artsValue.ToString();
+        techText.text = techValue.ToString();
+        cultureText.text = cultureValue.ToString();
+        conversationText.text = conversationalismValue.ToString();
+        confidenceText.text = confidenceValue.ToString();
+        appearanceText.text = appearanceValue.ToString();
+        
+        
+    }
 
 
 

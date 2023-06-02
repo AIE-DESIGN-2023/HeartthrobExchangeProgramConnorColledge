@@ -161,17 +161,15 @@ MonoBehaviour:
   conversationalismValue: 0
   confidenceValue: 0
   appearanceValue: 0
-  workoutButton: {fileID: 0}
-  studyButton: {fileID: 0}
-  drawButton: {fileID: 0}
-  fashionButton: {fileID: 0}
-  socialiseButton: {fileID: 0}
-  computerButton: {fileID: 0}
-  restButton: {fileID: 0}
-  languageButton: {fileID: 0}
-  saveButton: {fileID: 0}
-  notesButton: {fileID: 0}
-  phoneButton: {fileID: 0}
+  stressText: {fileID: 149192037}
+  academicsText: {fileID: 1116864061}
+  athleticsText: {fileID: 220925033}
+  artsText: {fileID: 1925811887}
+  techText: {fileID: 1017037888}
+  cultureText: {fileID: 2013720177}
+  conversationText: {fileID: 1930531220}
+  confidenceText: {fileID: 893351126}
+  appearanceText: {fileID: 1763027258}
 --- !u!4 &6819092
 Transform:
   m_ObjectHideFlags: 0
@@ -621,6 +619,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 220925031}
   m_CullTransparentMesh: 1
+--- !u!1 &254030709
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 254030710}
+  m_Layer: 0
+  m_Name: DayManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &254030710
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 254030709}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 568.4696, y: 254.06569, z: 16.254036}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &276000226
 GameObject:
   m_ObjectHideFlags: 0
@@ -1035,7 +1064,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 508736854}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6819091}
+        m_TargetAssemblyTypeName: StatBehaviourScript, Assembly-CSharp
+        m_MethodName: ActivitySelection
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 549440875281c3b43ab8509daba0a4a2, type: 2}
+          m_ObjectArgumentAssemblyTypeName: ActivityScriptableObject, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &508736854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1427,7 +1468,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 655754684}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6819091}
+        m_TargetAssemblyTypeName: StatBehaviourScript, Assembly-CSharp
+        m_MethodName: ActivitySelection
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 93244ddb4e9db0340ba882e77db75242, type: 2}
+          m_ObjectArgumentAssemblyTypeName: ActivityScriptableObject, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &655754684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2286,7 +2339,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 775147141}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6819091}
+        m_TargetAssemblyTypeName: StatBehaviourScript, Assembly-CSharp
+        m_MethodName: ActivitySelection
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: fa84e676e8130014e9ff539460f4e84c, type: 2}
+          m_ObjectArgumentAssemblyTypeName: ActivityScriptableObject, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &775147141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3954,7 +4019,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1553672723}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6819091}
+        m_TargetAssemblyTypeName: StatBehaviourScript, Assembly-CSharp
+        m_MethodName: ActivitySelection
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: ab0af1a1ea3ab49498845281866f20d2, type: 2}
+          m_ObjectArgumentAssemblyTypeName: ActivityScriptableObject, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1553672723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4611,7 +4688,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1745677863}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6819091}
+        m_TargetAssemblyTypeName: StatBehaviourScript, Assembly-CSharp
+        m_MethodName: ActivitySelection
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 1f8e34ed2333b1943afa2109b346dec9, type: 2}
+          m_ObjectArgumentAssemblyTypeName: ActivityScriptableObject, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1745677863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5140,7 +5229,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1845805788}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6819091}
+        m_TargetAssemblyTypeName: StatBehaviourScript, Assembly-CSharp
+        m_MethodName: ActivitySelection
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 02db5ce2f78d67c44a321b49edecfcc1, type: 2}
+          m_ObjectArgumentAssemblyTypeName: ActivityScriptableObject, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1845805788
 MonoBehaviour:
   m_ObjectHideFlags: 0
