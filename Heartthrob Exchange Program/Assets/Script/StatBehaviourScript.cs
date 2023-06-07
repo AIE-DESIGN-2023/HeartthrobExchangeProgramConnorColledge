@@ -30,6 +30,8 @@ public class StatBehaviourScript : MonoBehaviour
     public TMP_Text appearanceText;
 
     private DayManager dayManager;
+    
+
 
 
     void Start()
@@ -45,7 +47,9 @@ public class StatBehaviourScript : MonoBehaviour
         appearanceValue = 55;
         DisplayStat();
 
+
         dayManager = FindObjectOfType<DayManager>();
+        
     }
 
 
@@ -54,6 +58,7 @@ public class StatBehaviourScript : MonoBehaviour
     public void ActivitySelection(ActivityScriptableObject activity)
     {
         int statNumber = 0;
+        dayManager.EventManager();
         foreach(ActivityScriptableObject.PlayerStats stat in activity.playerStats)
         {
             if (activity.playerStats[statNumber] == ActivityScriptableObject.PlayerStats.stress)
@@ -124,5 +129,9 @@ public class StatBehaviourScript : MonoBehaviour
     }
 
 
-
+    
+ 
 }
+
+
+

@@ -5,15 +5,36 @@ using UnityEngine;
 public class DayManager : MonoBehaviour
 {
     public int[] days;
-    public int currentDay;    
+    public int currentDay;
+    public GameObject dateButton;
 
     public void UpdateDay()
     {
         currentDay++;
-        if(currentDay >= days.Length)
+        if (currentDay >= days.Length)
         {
             currentDay = 0;
         }
         Debug.Log(days[currentDay].ToString());
+    }
+
+    public void EventManager()
+    {
+        //Check to see if today is a weekday
+        if (days[currentDay] == 0)
+        {
+
+        }
+        //Check to see if today is a weekend
+        else if (days[currentDay] == 1)
+        {
+
+        }
+        //Check to see if a Date is scheduled for today
+        else if (days[currentDay] == 2)
+        {
+            dateButton.SetActive(true);
+        }
+
     }
 }
