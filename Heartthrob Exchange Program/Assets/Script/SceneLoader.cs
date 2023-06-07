@@ -6,11 +6,21 @@ using UnityEngine.SceneManagement;
 public class SceneLoader : MonoBehaviour
 {
     public string sceneName;
+    private DayManager dayManager;
 
     //Function that loads in a scene
     public void LoadScene()
     {
+        //Runs other scenes over the Activity Menu scene so the stats are not unloaded
         SceneManager.LoadScene(sceneName, LoadSceneMode.Additive);
+    }
+
+    public void UnloadScene()
+    {
+        
+        SceneManager.UnloadSceneAsync(sceneName);
+        
+        
     }
 
     public void QuitGame()

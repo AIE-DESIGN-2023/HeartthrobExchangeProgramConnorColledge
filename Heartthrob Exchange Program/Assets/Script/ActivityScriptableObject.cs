@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Data", menuName = "ScriptableObjects/ActivityScriptableObject", order = 1)]
+[CreateAssetMenu(fileName = "Data", menuName = "ScriptableObjects/ActivityScriptableObject", order = 2)]
 public class ActivityScriptableObject : ScriptableObject 
 {
     public enum PlayerStats
