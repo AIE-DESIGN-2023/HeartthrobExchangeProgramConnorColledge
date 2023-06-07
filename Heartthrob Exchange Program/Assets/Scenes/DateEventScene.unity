@@ -998,6 +998,7 @@ MonoBehaviour:
   locationValue: 0
   npcValue: 0
   randomLocation: 0
+  dateNPC: {fileID: 984053649}
 --- !u!1 &1633338569
 GameObject:
   m_ObjectHideFlags: 0
