@@ -25,39 +25,45 @@ public class NPCScriptableObject : ScriptableObject
 
     //Dialogue script variables and int values, divided by location
     [Space]
-    [Header("Date's first dialogue prompts")]
+    [Header("Garden Dialogue")]
     [Space]
 
     public string[] GardensDialoguePromptText;
-    public string[] BarDialoguePromptText;
-    public string[] ArcadeDialoguePromptText;
-    public string[] AquariumDialoguePromptText;
-
-
-    //arrays for assigning player's dialogue responses
     public string[] GardenPlayerResponse;
-
-    [Space]
     public int[] GardenResponseAffinity;
+    public string[] GardenDateReaction;
 
 
+    [Space]
+    [Header("Bar Dialogue")]
+    [Space]
+
+    public string[] BarDialoguePromptText;
     public string[] BarPlayerResponse;
-
-    [Space]
     public int[] BarResponseAffinity;
+    public string[] BarDateReaction;
+
+    [Space]
+    [Header("Arcade Dialogue")]
+    [Space]
 
 
+
+    public string[] ArcadeDialoguePromptText;
     public string[] ArcadePlayerResponse;
-
-    [Space]
     public int[] ArcadeResponseAffinity;
+    public string[] ArcadeDateReaction;
 
 
-    public string[] AquariumPlayerResponse;
+
+
     [Space]
+    [Header("Aquarium Dialogue")]
+    [Space]
+
+    public string[] AquariumDialoguePromptText;
+    public string[] AquariumPlayerResponse;
     public int[] AquariumResponseAffinity;
-
-
-
+    public string[] AquariumDateReaction;
 
 }

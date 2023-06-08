@@ -23,12 +23,12 @@ public class DayManager : MonoBehaviour
         //Check to see if today is a weekday
         if (days[currentDay] == 0)
         {
-
+            dateButton.SetActive(false);
         }
         //Check to see if today is a weekend
         else if (days[currentDay] == 1)
         {
-
+            dateButton.SetActive(false);
         }
         //Check to see if a Date is scheduled for today
         else if (days[currentDay] == 2)

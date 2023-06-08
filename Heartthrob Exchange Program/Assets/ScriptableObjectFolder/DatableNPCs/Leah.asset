@@ -21,30 +21,46 @@ MonoBehaviour:
   angryFace: {fileID: 976732633, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
   sadFace: {fileID: -1667447871, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
   GardensDialoguePromptText:
-  - These flowers sure are pretty.
-  BarDialoguePromptText:
-  - Do you... come here often?
-  ArcadeDialoguePromptText:
-  - I haven't been in a place like this since I was a kid!
-  AquariumDialoguePromptText:
-  - Oooh, look at the Dolphins!
+  - '"What a wonderful arrangement of flowers..."'
   GardenPlayerResponse:
-  - Yes, this arrangement seems to instill peace in one's heart...
-  - I like the colours.
+  - Indeed... truly it seems to instill peace in one's heart...
+  - They sure are pretty.
   - Oh man, do you think this one's edible?
   GardenResponseAffinity: 0f00000005000000f6ffffff
+  GardenDateReaction:
+  - '"Wow... I completely agree. How nice we can share in the peace together."'
+  - '"The colours compliment the season beautifully..."'
+  - '"Please don''t eat the flowers..."'
+  BarDialoguePromptText:
+  - '"Do you... come here often?"'
   BarPlayerResponse:
   - Only when the company is particularly enchanting.
   - Are you... flirting with me?
   - Yep. I have a serious alcohol problem.
   BarResponseAffinity: 0f00000005000000f6ffffff
+  BarDateReaction:
+  - (blush) "Y-y-you're just saying that!"
+  - '"Oh! Well... if you want me to be."'
+  - '"... based on your tone, I have to assume that''s a joke."'
+  ArcadeDialoguePromptText:
+  - '"I haven''t been in a place like this since I was a kid!"'
   ArcadePlayerResponse:
   - It's nice to let yourself be a kid every once in a while.
   - Dude, I practically live here...
-  - Adults are allowed to enjoy the arcade too ya know!
+  - Excuse you? Adults are allowed to enjoy the arcade too ya know!
   ArcadeResponseAffinity: 0f00000005000000f6ffffff
+  ArcadeDateReaction:
+  - '"I agree! Hey, let''s play the air hockey!"'
+  - '"Oh? Well, by all means lead the way. I''m sure you which are the good games."'
+  - '"I-uh... I never said they couldn''t..."'
+  AquariumDialoguePromptText:
+  - '"Oooh, look at the Dolphins!"'
   AquariumPlayerResponse:
   - They're such intelligent creatures.
   - Don't you think their teeth are scary?
   - Did you know that dolphins are mammals?
   AquariumResponseAffinity: 0f00000005000000f6ffffff
+  AquariumDateReaction:
+  - '"Nature can be so beautiful..."'
+  - '"No, but that''s certainly an interesting observation!"'
+  - '"Of course I know that..."'

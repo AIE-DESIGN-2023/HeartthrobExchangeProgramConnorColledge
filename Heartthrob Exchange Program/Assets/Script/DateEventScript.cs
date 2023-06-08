@@ -11,7 +11,13 @@ public class DateEventScript : MonoBehaviour
     public int npcValue;
     public int randomLocation;
     public GameObject dateNPC;
+    public GameObject nextButton;
+    public GameObject returnButton;
     public int dialogueSequence;
+    public string impressionQuality;
+
+    private DayManager dayManager;
+
 
     //Scriptable object variables
     public NPCScriptableObject[] allNPCs;
@@ -36,9 +42,12 @@ public class DateEventScript : MonoBehaviour
         responseTop.SetActive(false);
         responseMiddle.SetActive(false);
         responseBottom.SetActive(false);
+        nextButton.SetActive(true);
+        returnButton.SetActive(false);
         LocationIdentifier();
         NPCIdentifier();
         DateIntro();
+        dayManager.UpdateDay();
 
     }
 
@@ -115,6 +124,7 @@ public class DateEventScript : MonoBehaviour
     public void ResponseTime()
     {
         dialogueBox.text = "";
+        nextButton.SetActive(false);
         if (locationValue == 0)
         {
             responseTop.SetActive(true);
@@ -151,9 +161,59 @@ public class DateEventScript : MonoBehaviour
             middleText.text = currentNPC.AquariumPlayerResponse[1];
             bottomText.text = currentNPC.AquariumPlayerResponse[2];
         }
+
         
       
     }
+
+    public void DateResponse()
+    {
+        dialogueBox.text = "I seemed to have left a " + impressionQuality + " impression!";
+        nextButton.SetActive(false);
+        returnButton.SetActive(true);
+    }
+
+
+    //Gets response element from NPC scriptable when player clicks on dialogue button
+    public void DialogueChosen(int buttonNumber)
+    {
+        responseTop.SetActive(false);
+        responseMiddle.SetActive(false);
+        responseBottom.SetActive(false);
+        nextButton.SetActive(true);
+        if (locationValue == 0)
+        {
+            dialogueBox.text = currentNPC.GardenDateReaction[buttonNumber];
+        }
+        else if (locationValue == 1)
+        {
+            dialogueBox.text = currentNPC.BarDateReaction[buttonNumber];
+        }
+        else if (locationValue == 2)
+        {
+            dialogueBox.text = currentNPC.ArcadeDateReaction[buttonNumber];
+        }
+        else if (locationValue == 3)
+        {
+            dialogueBox.text = currentNPC.AquariumDateReaction[buttonNumber];
+        }
+        dialogueSequence = 2;
+        if(buttonNumber == 0)
+        {
+            impressionQuality = "good";
+        }
+        else if(buttonNumber == 1)
+        {
+            impressionQuality = "relatively good";
+        }
+        else if (buttonNumber == 2)
+        {
+            impressionQuality = "bad";
+        }
+    }
+
+
+    //Loads next sequenced function when player clicks on the Next Button
     public void GoNext()
     {
         if(dialogueSequence == 0)
@@ -163,6 +223,10 @@ public class DateEventScript : MonoBehaviour
         else if(dialogueSequence == 1)
         {
             ResponseTime();
+        }
+        else if(dialogueSequence == 2)
+        {
+            DateResponse();
         }
     }
 
