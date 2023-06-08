@@ -8,8 +8,14 @@ public class DayManager : MonoBehaviour
     public int currentDay;
     public GameObject dateButton;
 
+
+    public void Start()
+    {
+        currentDay = 1;
+    }
     public void UpdateDay()
     {
+        
         currentDay++;
         if (currentDay >= days.Length)
         {

@@ -16,6 +16,7 @@ public class DateEventScript : MonoBehaviour
     public int dialogueSequence;
     public string impressionQuality;
 
+
     private DayManager dayManager;
 
 
@@ -48,6 +49,7 @@ public class DateEventScript : MonoBehaviour
         NPCIdentifier();
         DateIntro();
         dayManager.UpdateDay();
+        
 
     }
 
