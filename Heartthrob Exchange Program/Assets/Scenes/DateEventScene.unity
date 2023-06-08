@@ -246,7 +246,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &242129179
 RectTransform:
   m_ObjectHideFlags: 0
@@ -807,7 +807,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1061354373
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1199,7 +1199,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1403422908
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1503,6 +1503,12 @@ MonoBehaviour:
   dialogueSequence: 0
   allNPCs:
   - {fileID: 11400000, guid: 5c1bbdd60e0785e42aa896a4fc379865, type: 2}
+  responseTop: {fileID: 1403422907}
+  responseMiddle: {fileID: 242129178}
+  responseBottom: {fileID: 1061354372}
+  topText: {fileID: 2064695944}
+  middleText: {fileID: 1930968773}
+  bottomText: {fileID: 1334264210}
 --- !u!1 &1633338569
 GameObject:
   m_ObjectHideFlags: 0

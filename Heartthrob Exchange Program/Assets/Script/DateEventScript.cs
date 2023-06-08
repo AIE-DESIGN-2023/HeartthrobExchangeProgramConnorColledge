@@ -5,6 +5,7 @@ using TMPro;
 
 public class DateEventScript : MonoBehaviour
 {
+    //base variables
     public TMP_Text dialogueBox;
     public int locationValue;
     public int npcValue;
@@ -12,9 +13,17 @@ public class DateEventScript : MonoBehaviour
     public GameObject dateNPC;
     public int dialogueSequence;
 
-
+    //Scriptable object variables
     public NPCScriptableObject[] allNPCs;
     private NPCScriptableObject currentNPC;
+
+    //Response button variables
+    public GameObject responseTop;
+    public GameObject responseMiddle;
+    public GameObject responseBottom;
+    public TMP_Text topText;
+    public TMP_Text middleText;
+    public TMP_Text bottomText;
 
     public void DialoguePrinter(NPCScriptableObject dialogue)
     {
@@ -24,12 +33,16 @@ public class DateEventScript : MonoBehaviour
     void Start()
     {
         dateNPC.SetActive(false);
+        responseTop.SetActive(false);
+        responseMiddle.SetActive(false);
+        responseBottom.SetActive(false);
         LocationIdentifier();
         NPCIdentifier();
         DateIntro();
 
     }
 
+    //checks locationValue and prints an introductory message to play to inform them of their location
     public void DateIntro()
     {
         if(locationValue == 0)
@@ -46,7 +59,7 @@ public class DateEventScript : MonoBehaviour
         }
         else if (locationValue == 3)
         {
-            dialogueBox.text = "You arrive at the Library...";
+            dialogueBox.text = "You arrive at the Aquarium...";
         }
         dialogueSequence = 0;
     }
@@ -101,24 +114,44 @@ public class DateEventScript : MonoBehaviour
     //gets responses options from NPC scriptable object, based on previously printed dialogue prompt, and gives the player response buttons
     public void ResponseTime()
     {
-        /*dialogueBox.text = "";
-        if(currentNPC.dialogueNumber == 0)
+        dialogueBox.text = "";
+        if (locationValue == 0)
         {
-            dialogueBox.text = "Garden responses...";
+            responseTop.SetActive(true);
+            responseMiddle.SetActive(true);
+            responseBottom.SetActive(true);
+            topText.text = currentNPC.GardenPlayerResponse[0];
+            middleText.text = currentNPC.GardenPlayerResponse[1];
+            bottomText.text = currentNPC.GardenPlayerResponse[2];
         }
-        else if(dialogueNumber == 1)
+        else if (locationValue == 1)
         {
-            dialogueBox.text = "Bar responses...";
+            responseTop.SetActive(true);
+            responseMiddle.SetActive(true);
+            responseBottom.SetActive(true);
+            topText.text = currentNPC.BarPlayerResponse[0];
+            middleText.text = currentNPC.BarPlayerResponse[1];
+            bottomText.text = currentNPC.BarPlayerResponse[2];
         }
-        else if(dialogueNumber == 2)
+        else if (locationValue == 2)
         {
-            dialogueBox.text = "Arcade responses...";
+            responseTop.SetActive(true);
+            responseMiddle.SetActive(true);
+            responseBottom.SetActive(true);
+            topText.text = currentNPC.ArcadePlayerResponse[0];
+            middleText.text = currentNPC.ArcadePlayerResponse[1];
+            bottomText.text = currentNPC.ArcadePlayerResponse[2];
         }
-        else if (dialogueNumber == 3)
+        else if (locationValue == 3)
         {
-            dialogueBox.text = "Aquarium responses...";
+            responseTop.SetActive(true);
+            responseMiddle.SetActive(true);
+            responseBottom.SetActive(true);
+            topText.text = currentNPC.AquariumPlayerResponse[0];
+            middleText.text = currentNPC.AquariumPlayerResponse[1];
+            bottomText.text = currentNPC.AquariumPlayerResponse[2];
         }
-        */
+        
       
     }
     public void GoNext()
