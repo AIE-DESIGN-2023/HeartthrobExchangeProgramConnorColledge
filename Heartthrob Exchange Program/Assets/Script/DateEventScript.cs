@@ -32,10 +32,7 @@ public class DateEventScript : MonoBehaviour
     public TMP_Text middleText;
     public TMP_Text bottomText;
 
-    public void DialoguePrinter(NPCScriptableObject dialogue)
-    {
 
-    }
 
     void Start()
     {
