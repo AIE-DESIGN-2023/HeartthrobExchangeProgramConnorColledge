@@ -9,7 +9,7 @@ public class NPCScriptableObject : ScriptableObject
 {
     public string npcName;
     public int npcAffinity;
-    public int scheduledLocation;
+    
 
     //Manages sprites
     [Space]
@@ -21,6 +21,13 @@ public class NPCScriptableObject : ScriptableObject
     public Sprite angryFace;
     public Sprite sadFace;
 
+    //Variables to determines scheduled dates characteristics
+    [Space]
+    [Header("Schedule variables")]
+    [Space]
+    public int scheduledLocation;
+    public int scheduledDay;
+    public int scheduledNPC;
 
 
     //Dialogue script variables and int values, divided by location
