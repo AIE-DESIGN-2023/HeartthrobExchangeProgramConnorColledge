@@ -1,17 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class DayManager : MonoBehaviour
 {
     public int[] days;
     public int currentDay;
     public GameObject dateButton;
+    public TMP_Text dateDisplay;
 
 
     public void Start()
     {
         currentDay = 0;
+        dateDisplay.text = (currentDay + 1).ToString();
+
     }
     public void UpdateDay()
     {
@@ -22,6 +26,7 @@ public class DayManager : MonoBehaviour
             currentDay = 0;
         }
         Debug.Log(days[currentDay].ToString());
+        dateDisplay.text = (currentDay + 1).ToString(); 
     }
 
     public void EventManager()
@@ -42,5 +47,9 @@ public class DayManager : MonoBehaviour
             dateButton.SetActive(true);
         }
 
+    }
+    public void Update()
+    {
+        EventManager();
     }
 }

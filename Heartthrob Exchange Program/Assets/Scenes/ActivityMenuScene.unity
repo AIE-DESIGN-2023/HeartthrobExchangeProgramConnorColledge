@@ -2326,9 +2326,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 212b6daef7dac944d9a817e22c2c8a91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  days: 00000000000000000200000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  days: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   currentDay: 0
   dateButton: {fileID: 7396446}
+  dateDisplay: {fileID: 1795169502}
 --- !u!1 &264665980
 GameObject:
   m_ObjectHideFlags: 0
@@ -5048,6 +5049,7 @@ MonoBehaviour:
   text2Content: When and where?
   text3Content: How does the BLARGHBAH sound??
   text4Content: I cannot think of a good enough excuse to say no.
+  dateModifier: 0
 --- !u!4 &462436997
 Transform:
   m_ObjectHideFlags: 0
@@ -15867,7 +15869,7 @@ GameObject:
   - component: {fileID: 1628557755}
   - component: {fileID: 1628557754}
   m_Layer: 0
-  m_Name: Calendar
+  m_Name: CalendarDisplay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17694,7 +17696,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '01
+  m_text: '1
 
 '
   m_isRightToLeft: 0
