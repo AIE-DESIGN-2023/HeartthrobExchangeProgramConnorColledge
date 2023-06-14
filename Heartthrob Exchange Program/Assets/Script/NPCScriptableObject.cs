@@ -7,6 +7,8 @@ using static ActivityScriptableObject;
 [CreateAssetMenu(fileName = "Data", menuName = "ScriptableObjects/NPCScriptableObject", order = 1)]
 public class NPCScriptableObject : ScriptableObject
 {
+
+
     public string npcName;
     public int npcAffinity;
     
@@ -72,5 +74,6 @@ public class NPCScriptableObject : ScriptableObject
     public string[] AquariumPlayerResponse;
     public int[] AquariumResponseAffinity;
     public string[] AquariumDateReaction;
+
 
 }

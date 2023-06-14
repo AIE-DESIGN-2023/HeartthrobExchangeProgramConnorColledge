@@ -7,20 +7,52 @@ using System;
 public class PhoneContacts : MonoBehaviour
 {
 
+    private DayManager dayManager;
+
     //Scriptable object variables
     public NPCScriptableObject[] allNPCs;
+    public NPCScriptableObject currentNPC;
 
-
-    public TMP_Text phoneHeader;
+    [Space]
+    [Header("Parent UI Objects")]
+    [Space]
     public GameObject phoneBody;
-    public GameObject contactButtons;
     public GameObject headImages;
-    public GameObject phoneButton;
     public GameObject phoneFocus;
+    public GameObject travelGuide;
+    public GameObject dateCalendar;
+    public GameObject calendarFocus;
+
+
+    [Space]
+    [Header("UI Buttons Children")]
+    [Space]
+    public GameObject contactButtons;
+    public GameObject phoneButton;
     public GameObject exitButton;
     public GameObject sendButton;
     public GameObject returnButton;
-    public string displayedName;
+
+    [Space]
+    [Header("Travel Guide Buttons")]
+    [Space]
+    public GameObject[] locationButtons;
+
+    [Space]
+    [Header("Calendar Buttons")]
+    [Space]
+    public GameObject[] calendarButtons;
+
+
+    [Space]
+    [Header("Text Objects")]
+    [Space]
+    public TMP_Text phoneHeader;
+
+
+    [Space]
+    [Header("Text Sequence Objects")]
+    [Space]
 
     //text exchange variables
     public GameObject sentContainer1;
@@ -38,6 +70,9 @@ public class PhoneContacts : MonoBehaviour
 
     private int textSequence;
 
+    public int dateModifier;
+
+    
 
 
     // Start is called before the first frame update
@@ -45,7 +80,14 @@ public class PhoneContacts : MonoBehaviour
     {
         phoneBody.SetActive(false);
         phoneFocus.SetActive(false);
-        
+        travelGuide.SetActive(false);
+        dateCalendar.SetActive(false);
+        calendarFocus.SetActive(false);
+
+        dayManager = FindObjectOfType<DayManager>();
+
+
+
 
 
     }
@@ -111,8 +153,20 @@ public class PhoneContacts : MonoBehaviour
     public void ContactSelected(int buttonNumber)
     {
         phoneHeader.text = allNPCs[buttonNumber].npcName;
+        currentNPC = allNPCs[buttonNumber];
         contactButtons.SetActive(false);
         headImages.SetActive(false);
+
+        //assigns each NPCs scheduledNPC value to it's position in the array
+        for (int i = 0; i < allNPCs.Length; i++)
+        {
+            if (allNPCs[i] == currentNPC)
+            {
+                currentNPC.scheduledNPC = i;
+                break;
+            }          
+        }
+
         OpenTexts();
     }
     
@@ -147,7 +201,38 @@ public class PhoneContacts : MonoBehaviour
     {
         receivedContainer1.SetActive(true);
         receivedText1.text = text2Content;
+        travelGuide.SetActive(true);
+        sendButton.SetActive(false);
+        
+    }
+
+    //function for managing players location selection and updating variable on NPC's writable script
+    public void LocationSelection(int locationNumber)
+    {
+        //when button is clicked on, updates the scheduled location variable to aligned button variable
+        currentNPC.scheduledLocation = locationNumber;
+        
         textSequence++;
+        travelGuide.SetActive(false);
+        dateCalendar.SetActive(true);
+        calendarFocus.SetActive(true);
+        
+        //NextText();
+        
+    }
+
+    //function for managing players day of the month selection and updating variable on NPC's writable script
+    public void DaySelection(int dayNumber)
+    {
+        currentNPC.scheduledDay = dayNumber;
+        dateCalendar.SetActive(false);
+        calendarFocus.SetActive(false);
+        sendButton.SetActive(true);
+        
+        //establishes which of the 28 days has become a date event day
+        dateModifier = dayNumber;
+        
+        NextText();
     }
 
     public void LocationOffer()
@@ -163,5 +248,9 @@ public class PhoneContacts : MonoBehaviour
         textSequence = 0;
         sendButton.SetActive(false);
         returnButton.SetActive(true);
+
+        //updates Day Manager to set the selected date day as a date event day
+        dayManager.days[dateModifier] = 2;
+        
     }
 }

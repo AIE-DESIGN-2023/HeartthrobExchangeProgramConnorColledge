@@ -11,7 +11,7 @@ public class DayManager : MonoBehaviour
 
     public void Start()
     {
-        currentDay = 1;
+        currentDay = 0;
     }
     public void UpdateDay()
     {
