@@ -16,7 +16,7 @@ public class DateEventScript : MonoBehaviour
     public int dialogueSequence;
     public string impressionQuality;
     public TMP_Text nameDisplay;
-
+    public string playerName;
 
     private DayManager dayManager;
 
@@ -55,7 +55,8 @@ public class DateEventScript : MonoBehaviour
     //checks locationValue and prints an introductory message to play to inform them of their location
     public void DateIntro()
     {
-        if(locationValue == 0)
+        nameDisplay.text = playerName;
+        if (locationValue == 0)
         {
             dialogueBox.text = "You arrive at the Botanical Gardens...";
         }
@@ -90,7 +91,7 @@ public class DateEventScript : MonoBehaviour
             }
 
         }
-        nameDisplay.text = currentNPC.npcName;
+        
     }
 
 
@@ -105,6 +106,7 @@ public class DateEventScript : MonoBehaviour
     public void DateArrives()
     {
         dateNPC.SetActive(true);
+        nameDisplay.text = currentNPC.npcName;
         //int dialogueNumber = Random.Range(0, 3);
         if (locationValue == 0)
         {
@@ -133,6 +135,7 @@ public class DateEventScript : MonoBehaviour
     //gets responses options from NPC scriptable object, based on previously printed dialogue prompt, and gives the player response buttons
     public void ResponseTime()
     {
+        nameDisplay.text = playerName;
         dialogueBox.text = "";
         nextButton.SetActive(false);
         if (locationValue == 0)
@@ -178,6 +181,7 @@ public class DateEventScript : MonoBehaviour
 
     public void DateResponse()
     {
+        nameDisplay.text = currentNPC.npcName;
         dialogueBox.text = "I seemed to have left a " + impressionQuality + " impression!";
         nextButton.SetActive(false);
         returnButton.SetActive(true);
@@ -187,6 +191,7 @@ public class DateEventScript : MonoBehaviour
     //Gets response element from NPC scriptable when player clicks on dialogue button
     public void DialogueChosen(int buttonNumber)
     {
+        nameDisplay.text = playerName;
         responseTop.SetActive(false);
         responseMiddle.SetActive(false);
         responseBottom.SetActive(false);

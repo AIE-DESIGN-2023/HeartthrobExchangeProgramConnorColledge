@@ -22,6 +22,7 @@ public class PhoneContacts : MonoBehaviour
     public GameObject travelGuide;
     public GameObject dateCalendar;
     public GameObject calendarFocus;
+    public GameObject textsContainer;
 
 
     [Space]
@@ -48,6 +49,7 @@ public class PhoneContacts : MonoBehaviour
     [Header("Text Objects")]
     [Space]
     public TMP_Text phoneHeader;
+    
 
 
     [Space]
@@ -85,11 +87,24 @@ public class PhoneContacts : MonoBehaviour
         calendarFocus.SetActive(false);
 
         dayManager = FindObjectOfType<DayManager>();
+        ScheduleClear();
 
 
 
 
 
+    }
+
+    //Clears all the NPCs schedules on their writable scripts to not include any dates
+    public void ScheduleClear()
+    {
+        for (int i = 0; i < allNPCs.Length; i++)
+        {
+            if (allNPCs[i].scheduledDay != 0)
+            {
+                allNPCs[i].scheduledDay = 0;
+            }
+        }
     }
 
 
@@ -104,6 +119,7 @@ public class PhoneContacts : MonoBehaviour
         exitButton.SetActive(true);
         sendButton.SetActive(false);
         returnButton.SetActive(false);
+        textsContainer.SetActive(false);
 
         textSequence = 0;
 
@@ -139,10 +155,12 @@ public class PhoneContacts : MonoBehaviour
         sentContainer2.SetActive(false);
         receivedContainer1.SetActive(false);
         receivedContainer2.SetActive(false);
+        textsContainer.SetActive (false);
     }
 
     public void OpenTexts()
     {
+        textsContainer.SetActive(true);
         sendButton.SetActive(true);
         returnButton.SetActive(true);
         exitButton.SetActive(false);

@@ -30,7 +30,11 @@ public class StatBehaviourScript : MonoBehaviour
     public TMP_Text appearanceText;
 
     private DayManager dayManager;
-    
+
+    //Scriptable object variables
+    public NPCScriptableObject[] allNPCs;
+    public NPCScriptableObject currentNPC;
+
 
 
 
@@ -47,11 +51,22 @@ public class StatBehaviourScript : MonoBehaviour
         appearanceValue = 55;
         DisplayStat();
 
+        ScheduleClear();
 
         dayManager = FindObjectOfType<DayManager>();
         
     }
 
+    public void ScheduleClear()
+    {
+        for (int i = 0; i < allNPCs.Length; i++)
+        {
+            if (allNPCs[i].scheduledDay != 0)
+            {
+                allNPCs[i].scheduledDay = 0;
+            }
+        }
+    }
 
 
     //void for determining activity selection

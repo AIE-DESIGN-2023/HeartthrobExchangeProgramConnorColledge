@@ -20,7 +20,7 @@ MonoBehaviour:
   angryFace: {fileID: 976732633, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
   sadFace: {fileID: -1667447871, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
   scheduledLocation: 2
-  scheduledDay: 11
+  scheduledDay: 5
   scheduledNPC: 2
   GardensDialoguePromptText:
   - '"Hmph... Flowers... Their biology is interesting by themselves they aren''t
