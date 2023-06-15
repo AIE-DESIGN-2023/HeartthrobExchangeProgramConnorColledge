@@ -199,6 +199,7 @@ public class DateEventScript : MonoBehaviour
         if (locationValue == 0)
         {
             dialogueBox.text = currentNPC.GardenDateReaction[buttonNumber];
+            
         }
         else if (locationValue == 1)
         {

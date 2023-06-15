@@ -1880,6 +1880,82 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 205722623}
   m_CullTransparentMesh: 1
+--- !u!1 &217669333
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 217669336}
+  - component: {fileID: 217669335}
+  - component: {fileID: 217669334}
+  m_Layer: 5
+  m_Name: NoteFocus
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &217669334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217669333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.74509805}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &217669335
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217669333}
+  m_CullTransparentMesh: 1
+--- !u!224 &217669336
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217669333}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 689559762}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &220598470
 GameObject:
   m_ObjectHideFlags: 0
@@ -4095,7 +4171,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 355618679}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1602002853}
+        m_TargetAssemblyTypeName: AffinityNotebook, Assembly-CSharp
+        m_MethodName: OpenNotebook
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &355618679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6388,7 +6476,7 @@ GameObject:
   - component: {fileID: 591353864}
   - component: {fileID: 591353863}
   m_Layer: 5
-  m_Name: NameList1
+  m_Name: NameList6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7577,6 +7665,7 @@ RectTransform:
   - {fileID: 1852007868}
   - {fileID: 1509713035}
   - {fileID: 2103489991}
+  - {fileID: 217669336}
   - {fileID: 1586890675}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -10652,7 +10741,7 @@ GameObject:
   - component: {fileID: 906494200}
   - component: {fileID: 906494199}
   m_Layer: 5
-  m_Name: AffinityFace3
+  m_Name: AffinityFace8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11567,7 +11656,7 @@ GameObject:
   - component: {fileID: 983806043}
   - component: {fileID: 983806042}
   m_Layer: 5
-  m_Name: AffinityFace2
+  m_Name: AffinityFace7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14841,7 +14930,7 @@ GameObject:
   - component: {fileID: 1347340008}
   - component: {fileID: 1347340007}
   m_Layer: 5
-  m_Name: NameList3
+  m_Name: NameList8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16877,7 +16966,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1586890675
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16893,7 +16982,7 @@ RectTransform:
   - {fileID: 1660979419}
   - {fileID: 409064902}
   m_Father: {fileID: 689559762}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -17117,8 +17206,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53817bb835b55647ae497402b104993, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  notebookName: []
-  affinityFaces: []
+  notebookName:
+  - {fileID: 1848103512}
+  - {fileID: 2020975970}
+  - {fileID: 307568043}
+  - {fileID: 606716799}
+  - {fileID: 379587734}
+  - {fileID: 591353863}
+  - {fileID: 2009636294}
+  - {fileID: 1347340007}
+  affinityFaces:
+  - {fileID: 587945473}
+  - {fileID: 282726683}
+  - {fileID: 1218439785}
+  - {fileID: 686398699}
+  - {fileID: 1331664806}
+  - {fileID: 2078668992}
+  - {fileID: 983806040}
+  - {fileID: 906494197}
   angryFace: {fileID: 21300000, guid: 97fde5c136873624d92435ce20408824, type: 3}
   unimpressedFace: {fileID: 21300000, guid: 1182ecff9b2bc984593615255b5f5388, type: 3}
   sadFace: {fileID: 21300000, guid: 7f40103b0804b22459df395b9afbb7e4, type: 3}
@@ -17126,7 +17231,11 @@ MonoBehaviour:
   amusedFace: {fileID: 21300000, guid: 1c33676cc850651409c243377d9417d8, type: 3}
   happyFace: {fileID: 21300000, guid: cfeae2dd96ba4d142b1bb92d3d7162d8, type: 3}
   blushingFace: {fileID: 21300000, guid: e4c969d348246ce4fbd5f7ecac6ff858, type: 3}
-  exitNotes: {fileID: 0}
+  exitNotes: {fileID: 1915086159}
+  noteBook: {fileID: 1586890674}
+  pageOne: {fileID: 1660979418}
+  pageTwo: {fileID: 409064901}
+  noteFocus: {fileID: 217669333}
 --- !u!1 &1606157646
 GameObject:
   m_ObjectHideFlags: 0
@@ -21631,7 +21740,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1915086162}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1602002853}
+        m_TargetAssemblyTypeName: AffinityNotebook, Assembly-CSharp
+        m_MethodName: CloseNotebook
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1915086162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22723,7 +22844,7 @@ GameObject:
   - component: {fileID: 2009636295}
   - component: {fileID: 2009636294}
   m_Layer: 5
-  m_Name: NameList2
+  m_Name: NameList7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23827,7 +23948,7 @@ GameObject:
   - component: {fileID: 2078668995}
   - component: {fileID: 2078668994}
   m_Layer: 5
-  m_Name: AffinityFace1
+  m_Name: AffinityFace6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
