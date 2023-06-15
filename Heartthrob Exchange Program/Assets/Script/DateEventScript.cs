@@ -9,12 +9,13 @@ public class DateEventScript : MonoBehaviour
     public TMP_Text dialogueBox;
     public int locationValue;
     public int npcValue;
-    public int randomLocation;
+    public int dayCheck;
     public GameObject dateNPC;
     public GameObject nextButton;
     public GameObject returnButton;
     public int dialogueSequence;
     public string impressionQuality;
+    public TMP_Text nameDisplay;
 
 
     private DayManager dayManager;
@@ -36,16 +37,17 @@ public class DateEventScript : MonoBehaviour
 
     void Start()
     {
+        dayManager = FindObjectOfType<DayManager>();
         dateNPC.SetActive(false);
         responseTop.SetActive(false);
         responseMiddle.SetActive(false);
         responseBottom.SetActive(false);
         nextButton.SetActive(true);
         returnButton.SetActive(false);
+        DateIdentifier();
         LocationIdentifier();
-        NPCIdentifier();
         DateIntro();
-        dayManager.UpdateDay();
+        
         
 
     }
@@ -73,22 +75,31 @@ public class DateEventScript : MonoBehaviour
     }
     
 
+    //Identifies the current day and matches the scheduled NPC for that day via their writable script
+    public void DateIdentifier()
+    {
+        dayCheck = dayManager.currentDay;
+        
+        for(int i = 0; i < allNPCs.Length; i++)
+        {
+            if (allNPCs[i].scheduledDay == dayCheck)
+            {
+                currentNPC = allNPCs[i];
+                
+                break;
+            }
+
+        }
+        nameDisplay.text = currentNPC.npcName;
+    }
+
 
     //identifies the scheduled date location
     public void LocationIdentifier()
     {
-        //generates a random number in order to pick a location (for the purposes of testing)
-        randomLocation = Random.Range(0, 4);
-        locationValue = randomLocation;
+        locationValue = currentNPC.scheduledLocation;
     }
 
-    //identifies the schedules date NPC
-    public void NPCIdentifier()
-    {
-        currentNPC = allNPCs[Random.Range(0, allNPCs.Length)];
-
-
-    }
 
     //Presents the date sprite to the player, and randomly selects which conversation start to print to player
     public void DateArrives()

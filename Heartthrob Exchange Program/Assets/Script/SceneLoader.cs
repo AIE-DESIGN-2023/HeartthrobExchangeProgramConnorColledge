@@ -15,7 +15,7 @@ public class SceneLoader : MonoBehaviour
     public void LoadScene()
     {
         //updates day when new scene is loaded
-        dayManager.UpdateDay();
+        //dayManager.UpdateDay();
         
         
         //Runs other scenes over the Activity Menu scene so the stats are not unloaded

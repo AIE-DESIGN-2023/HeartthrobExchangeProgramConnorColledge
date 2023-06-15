@@ -14,12 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npcName: Axel
   npcAffinity: 50
-  scheduledLocation: 0
   bodySprite: {fileID: 714632428, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
   happyFace: {fileID: -1560684334, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
   blushingFace: {fileID: -522930574, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
   angryFace: {fileID: 976732633, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
   sadFace: {fileID: -1667447871, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
+  scheduledLocation: 1
+  scheduledDay: 2
+  scheduledNPC: 3
   GardensDialoguePromptText:
   - '"Flowers don''t move much, huh."'
   GardenPlayerResponse:
@@ -46,26 +48,26 @@ MonoBehaviour:
   - '"The only problem I have with alcohol is I didn''t have any in my system when
     you asked me that"'
   ArcadeDialoguePromptText:
-  - '"Let''s freaking go!!!"'
+  - '"Awful lotta kids around here..."'
   ArcadePlayerResponse:
-  - 'I''ll stomp you in Meat Punchers 3 Turbo! '
-  - I'd like to play a light gun game.
-  - Calm yourself! You're making a scene...
+  - I'm sorry, I didn't think about that... You wanna go somewhere else?
+  - You don't like kids?
+  - Hey! Adults can like the arcade too, ya big butt!
   ArcadeResponseAffinity: 0f00000005000000f6ffffff
   ArcadeDateReaction:
-  - '"Them''s fighting words, scrub! Come at me!"'
-  - '"Those things are coin vacuums but I''d be happy to show a lowly peon such as
-    yourself how it''s done.""'
-  - '"Say shit like that again and I''ll show you a scene!"'
+  - '"Oh no, that''s fine! It''s been a hot minute since I''ve played Air Hockey
+    anyway!"'
+  - '"Kids are fine, just prefer them not to be around when I''m trying to have fun...
+    Y''know what I mean?"'
+  - '"Uh, I- well... that was just an embarassing thing to say now, wasn''t it?"'
   AquariumDialoguePromptText:
-  - '"I can''t believe this aquarium has dolphins."'
+  - '"Dolphins are like my spririt animal, dog..."'
   AquariumPlayerResponse:
-  - Don't you think their teeth are scary?
   - Dolphins should be left in the wild...
-  - They're such intelligent creatures.
+  - Dolphins are such intelligent creatures...
+  - Don't you think their teeth are scary?
   AquariumResponseAffinity: 0f00000005000000f6ffffff
   AquariumDateReaction:
-  - '"Oh! I see you have a keen eye for important details! Their teeth are in fact
-    quite terrifying...""'
-  - '"Indeed. They are much more willful and violent in their natural state..."'
-  - '"You think THAT''S intelligence?"'
+  - '"Hell yeah, brother... Swim free, live free, that''s my motto!"'
+  - '"I''ll take that implied compliment! Thanks!"'
+  - '"Scary teeth? I don''t really understand... what?"'
