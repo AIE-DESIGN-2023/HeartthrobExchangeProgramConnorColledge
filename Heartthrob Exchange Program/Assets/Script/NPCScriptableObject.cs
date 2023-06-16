@@ -49,20 +49,20 @@ public class NPCScriptableObject : ScriptableObject
     [Header("Garden Dialogue")]
     [Space]
 
-    public string[] GardensDialoguePromptText;
-    public string[] GardenPlayerResponse;
-    public int[] GardenResponseAffinity;
-    public string[] GardenDateReaction;
+    public string[] gardensDialoguePromptText;
+    public string[] gardenPlayerResponse;
+    public int[] gardenResponseAffinity;
+    public string[] gardenDateReaction;
 
 
     [Space]
     [Header("Bar Dialogue")]
     [Space]
 
-    public string[] BarDialoguePromptText;
-    public string[] BarPlayerResponse;
-    public int[] BarResponseAffinity;
-    public string[] BarDateReaction;
+    public string[] barDialoguePromptText;
+    public string[] barPlayerResponse;
+    public int[] barResponseAffinity;
+    public string[] barDateReaction;
 
     [Space]
     [Header("Arcade Dialogue")]
@@ -70,10 +70,10 @@ public class NPCScriptableObject : ScriptableObject
 
 
 
-    public string[] ArcadeDialoguePromptText;
-    public string[] ArcadePlayerResponse;
-    public int[] ArcadeResponseAffinity;
-    public string[] ArcadeDateReaction;
+    public string[] arcadeDialoguePromptText;
+    public string[] arcadePlayerResponse;
+    public int[] arcadeResponseAffinity;
+    public string[] arcadeDateReaction;
 
 
 
@@ -82,10 +82,10 @@ public class NPCScriptableObject : ScriptableObject
     [Header("Aquarium Dialogue")]
     [Space]
 
-    public string[] AquariumDialoguePromptText;
-    public string[] AquariumPlayerResponse;
-    public int[] AquariumResponseAffinity;
-    public string[] AquariumDateReaction;
+    public string[] aquariumDialoguePromptText;
+    public string[] aquariumPlayerResponse;
+    public int[] aquariumResponseAffinity;
+    public string[] aquariumDateReaction;
 
 
 }

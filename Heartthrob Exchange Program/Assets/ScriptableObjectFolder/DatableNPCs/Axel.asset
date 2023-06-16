@@ -19,9 +19,9 @@ MonoBehaviour:
   blushingFace: {fileID: -522930574, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
   angryFace: {fileID: 976732633, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
   sadFace: {fileID: -1667447871, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
-  scheduledLocation: 1
-  scheduledDay: 0
-  scheduledNPC: 3
+  scheduledLocation: 0
+  scheduledDay: 1
+  scheduledNPC: 2
   angerThreshold: 10
   unimpressedThreshold: 30
   sadThreshold: 50
@@ -29,52 +29,52 @@ MonoBehaviour:
   amusedThreshold: 90
   happyThreshold: 110
   blushingThreshold: 130
-  GardensDialoguePromptText:
+  gardensDialoguePromptText:
   - '"Flowers don''t move much, huh."'
-  GardenPlayerResponse:
+  gardenPlayerResponse:
   - Oh man, do you think this one's edible?
   - Do you... hate that about them?
   - What? Of course they don't move.
-  GardenResponseAffinity: 0f00000005000000f6ffffff
-  GardenDateReaction:
+  gardenResponseAffinity: 0f00000005000000f6ffffff
+  gardenDateReaction:
   - '"Axel no likey vegetles"'
   - '"I guess I don''t hate that about them? But I also don''t really like that about
     them either"'
   - '"It was just an observation. Jerk..."'
-  BarDialoguePromptText:
+  barDialoguePromptText:
   - '"Now THIS is more my scene"'
-  BarPlayerResponse:
+  barPlayerResponse:
   - I enjoy the company that comes with a place like this
   - I enjoy observing the drunkards.
   - Do you have an alcohol problem?
-  BarResponseAffinity: 0f00000005000000f6ffffff
-  BarDateReaction:
+  barResponseAffinity: 0f00000005000000f6ffffff
+  barDateReaction:
   - '"Bars are a melting pot of the most interesting people you''ll ever meet. I''m
     glad you understand that"'
   - '"Well that''s good, ''cause I am a feast for the eyes!"'
   - '"The only problem I have with alcohol is I didn''t have any in my system when
     you asked me that"'
-  ArcadeDialoguePromptText:
+  arcadeDialoguePromptText:
   - '"Awful lotta kids around here..."'
-  ArcadePlayerResponse:
+  arcadePlayerResponse:
   - I'm sorry, I didn't think about that... You wanna go somewhere else?
   - You don't like kids?
   - Hey! Adults can like the arcade too, ya big butt!
-  ArcadeResponseAffinity: 0f00000005000000f6ffffff
-  ArcadeDateReaction:
+  arcadeResponseAffinity: 0f00000005000000f6ffffff
+  arcadeDateReaction:
   - '"Oh no, that''s fine! It''s been a hot minute since I''ve played Air Hockey
     anyway!"'
   - '"Kids are fine, just prefer them not to be around when I''m trying to have fun...
-    Y''know what I mean?"'
+    Y''know what I mean?" '
   - '"Uh, I- well... that was just an embarassing thing to say now, wasn''t it?"'
-  AquariumDialoguePromptText:
+  aquariumDialoguePromptText:
   - '"Dolphins are like my spririt animal, dog..."'
-  AquariumPlayerResponse:
+  aquariumPlayerResponse:
   - Dolphins should be left in the wild...
   - Dolphins are such intelligent creatures...
   - Don't you think their teeth are scary?
-  AquariumResponseAffinity: 0f00000005000000f6ffffff
-  AquariumDateReaction:
-  - '"Hell yeah, brother... Swim free, live free, that''s my motto!"'
-  - '"I''ll take that implied compliment! Thanks!"'
+  aquariumResponseAffinity: 000000000000000000000000
+  aquariumDateReaction:
+  - '"Hell yeah... Swim free, live free, that''s my motto!"'
+  - '"I''ll take that implied compliment! Thanks!" '
   - '"Scary teeth? I don''t really understand... what?"'

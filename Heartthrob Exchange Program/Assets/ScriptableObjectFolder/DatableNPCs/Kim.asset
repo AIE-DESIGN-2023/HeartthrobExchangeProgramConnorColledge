@@ -29,50 +29,51 @@ MonoBehaviour:
   amusedThreshold: 80
   happyThreshold: 100
   blushingThreshold: 160
-  GardensDialoguePromptText:
+  gardensDialoguePromptText:
   - '"Hmph... Flowers... Their biology is interesting by themselves they aren''t
     particularly exciting, huh?"'
-  GardenPlayerResponse:
+  gardenPlayerResponse:
   - Oh man, do you think this one's edible?
   - At least they're pretty.
   - Flowers instill a sense of peace in one's heart...
-  GardenResponseAffinity: 0f00000005000000f6ffffff
-  GardenDateReaction:
+  gardenResponseAffinity: 000000000000000000000000
+  gardenDateReaction:
   - '"Interesting question! Our only recourse is to apply the Scientific Method"'
-  - '"I guess. They''d be prettier with RGB lighting"'
+  - '"I guess. They''d be prettier if they could change colour."'
   - '"Pfft! Whatever you say, nerd!"'
-  BarDialoguePromptText:
+  barDialoguePromptText:
   - '"This the sort of place you like hanging around?"'
-  BarPlayerResponse:
+  barPlayerResponse:
   - I enjoy observing the drunkards.
   - Yep. I have a serious alcohol problem.
   - Only when the company is particularly enchanting.
-  BarResponseAffinity: 0f00000005000000f6ffffff
-  BarDateReaction:
-  - '"Oh, collecting data? I''d love to discuss what you''ve observed"'
+  barResponseAffinity: 000000000000000000000000
+  barDateReaction:
+  - '"Oh, collecting data are we? I''d love to discuss what you''ve observed"'
   - '"Nice. I have a weakness for stimulants myself."'
   - '"... Am I supposed to be impressed by that?"'
-  ArcadeDialoguePromptText:
+  arcadeDialoguePromptText:
   - '"Let''s freaking go!!!"'
-  ArcadePlayerResponse:
-  - 'I''ll stomp you in Meat Punchers 3 Turbo! '
+  arcadePlayerResponse:
+  - 'I''ll stomp you in Meat Punchers 3: Turbo Edition!'
   - I'd like to play a light gun game.
   - Calm yourself! You're making a scene...
-  ArcadeResponseAffinity: 0f00000005000000f6ffffff
-  ArcadeDateReaction:
+  arcadeResponseAffinity: 000000000000000000000000
+  arcadeDateReaction:
   - '"Them''s fighting words, scrub! Come at me!"'
   - '"Those things are coin vacuums but I''d be happy to show a lowly peon such as
-    yourself how it''s done.""'
+    yourself how it''s done."'
   - '"Say shit like that again and I''ll show you a scene!"'
-  AquariumDialoguePromptText:
+  aquariumDialoguePromptText:
   - '"I can''t believe this aquarium has dolphins."'
-  AquariumPlayerResponse:
-  - Don't you think their teeth are scary?
+  aquariumPlayerResponse:
+  - 'Don''t you think their teeth are scary? '
   - Dolphins should be left in the wild...
   - They're such intelligent creatures.
-  AquariumResponseAffinity: 0f00000005000000f6ffffff
-  AquariumDateReaction:
+  aquariumResponseAffinity: 000000000000000000000000
+  aquariumDateReaction:
   - '"Oh! I see you have a keen eye for important details! Their teeth are in fact
-    quite terrifying...""'
-  - '"Indeed. They are much more willful and violent in their natural state..."'
-  - '"You think THAT''S intelligence?"'
+    quite terrifying..."'
+  - '"Indeed. They are much violent in their natural state... Much more interesting
+    creatures that way."'
+  - '"You think THAT''S intelligence?" '

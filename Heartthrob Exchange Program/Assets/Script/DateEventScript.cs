@@ -110,23 +110,23 @@ public class DateEventScript : MonoBehaviour
         //int dialogueNumber = Random.Range(0, 3);
         if (locationValue == 0)
         {
-            int dialogueNumber = Random.Range(0, currentNPC.GardensDialoguePromptText.Length);
-            dialogueBox.text = currentNPC.GardensDialoguePromptText[dialogueNumber];
+            int dialogueNumber = Random.Range(0, currentNPC.gardensDialoguePromptText.Length);
+            dialogueBox.text = currentNPC.gardensDialoguePromptText[dialogueNumber];
         }
         else if (locationValue == 1)
         {
-            int dialogueNumber = Random.Range(0, currentNPC.BarDialoguePromptText.Length);
-            dialogueBox.text = currentNPC.BarDialoguePromptText[dialogueNumber];
+            int dialogueNumber = Random.Range(0, currentNPC.barDialoguePromptText.Length);
+            dialogueBox.text = currentNPC.barDialoguePromptText[dialogueNumber];
         }
         else if (locationValue == 2)
         {
-            int dialogueNumber = Random.Range(0, currentNPC.ArcadeDialoguePromptText.Length);
-            dialogueBox.text = currentNPC.ArcadeDialoguePromptText[dialogueNumber];
+            int dialogueNumber = Random.Range(0, currentNPC.arcadeDialoguePromptText.Length);
+            dialogueBox.text = currentNPC.arcadeDialoguePromptText[dialogueNumber];
         }
         else
         {
-            int dialogueNumber = Random.Range(0, currentNPC.AquariumDialoguePromptText.Length);
-            dialogueBox.text = currentNPC.AquariumDialoguePromptText[dialogueNumber];
+            int dialogueNumber = Random.Range(0, currentNPC.aquariumDialoguePromptText.Length);
+            dialogueBox.text = currentNPC.aquariumDialoguePromptText[dialogueNumber];
         }
         dialogueSequence = 1;
     }
@@ -143,36 +143,36 @@ public class DateEventScript : MonoBehaviour
             responseTop.SetActive(true);
             responseMiddle.SetActive(true);
             responseBottom.SetActive(true);
-            topText.text = currentNPC.GardenPlayerResponse[0];
-            middleText.text = currentNPC.GardenPlayerResponse[1];
-            bottomText.text = currentNPC.GardenPlayerResponse[2];
+            topText.text = currentNPC.gardenPlayerResponse[0];
+            middleText.text = currentNPC.gardenPlayerResponse[1];
+            bottomText.text = currentNPC.gardenPlayerResponse[2];
         }
         else if (locationValue == 1)
         {
             responseTop.SetActive(true);
             responseMiddle.SetActive(true);
             responseBottom.SetActive(true);
-            topText.text = currentNPC.BarPlayerResponse[0];
-            middleText.text = currentNPC.BarPlayerResponse[1];
-            bottomText.text = currentNPC.BarPlayerResponse[2];
+            topText.text = currentNPC.barPlayerResponse[0];
+            middleText.text = currentNPC.barPlayerResponse[1];
+            bottomText.text = currentNPC.barPlayerResponse[2];
         }
         else if (locationValue == 2)
         {
             responseTop.SetActive(true);
             responseMiddle.SetActive(true);
             responseBottom.SetActive(true);
-            topText.text = currentNPC.ArcadePlayerResponse[0];
-            middleText.text = currentNPC.ArcadePlayerResponse[1];
-            bottomText.text = currentNPC.ArcadePlayerResponse[2];
+            topText.text = currentNPC.arcadePlayerResponse[0];
+            middleText.text = currentNPC.arcadePlayerResponse[1];
+            bottomText.text = currentNPC.arcadePlayerResponse[2];
         }
         else if (locationValue == 3)
         {
             responseTop.SetActive(true);
             responseMiddle.SetActive(true);
             responseBottom.SetActive(true);
-            topText.text = currentNPC.AquariumPlayerResponse[0];
-            middleText.text = currentNPC.AquariumPlayerResponse[1];
-            bottomText.text = currentNPC.AquariumPlayerResponse[2];
+            topText.text = currentNPC.aquariumPlayerResponse[0];
+            middleText.text = currentNPC.aquariumPlayerResponse[1];
+            bottomText.text = currentNPC.aquariumPlayerResponse[2];
         }
 
         
@@ -198,21 +198,21 @@ public class DateEventScript : MonoBehaviour
         nextButton.SetActive(true);
         if (locationValue == 0)
         {
-            dialogueBox.text = currentNPC.GardenDateReaction[buttonNumber];
+            dialogueBox.text = currentNPC.gardenDateReaction[buttonNumber];
             //adds the responses affinity value to the NPC's affinity score
             //currentNPC.npcAffinity + currentNPC. 
         }
         else if (locationValue == 1)
         {
-            dialogueBox.text = currentNPC.BarDateReaction[buttonNumber];
+            dialogueBox.text = currentNPC.barDateReaction[buttonNumber];
         }
         else if (locationValue == 2)
         {
-            dialogueBox.text = currentNPC.ArcadeDateReaction[buttonNumber];
+            dialogueBox.text = currentNPC.arcadeDateReaction[buttonNumber];
         }
         else if (locationValue == 3)
         {
-            dialogueBox.text = currentNPC.AquariumDateReaction[buttonNumber];
+            dialogueBox.text = currentNPC.aquariumDateReaction[buttonNumber];
         }
         dialogueSequence = 2;
         if(buttonNumber == 0)
