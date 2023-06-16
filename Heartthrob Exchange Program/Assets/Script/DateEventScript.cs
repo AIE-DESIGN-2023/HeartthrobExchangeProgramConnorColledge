@@ -18,6 +18,7 @@ public class DateEventScript : MonoBehaviour
     public TMP_Text nameDisplay;
     public string playerName;
 
+
     private DayManager dayManager;
 
 
@@ -200,19 +201,22 @@ public class DateEventScript : MonoBehaviour
         {
             dialogueBox.text = currentNPC.gardenDateReaction[buttonNumber];
             //adds the responses affinity value to the NPC's affinity score
-            //currentNPC.npcAffinity + currentNPC. 
+            currentNPC.npcAffinity += currentNPC.gardenResponseAffinity[buttonNumber];
         }
         else if (locationValue == 1)
         {
             dialogueBox.text = currentNPC.barDateReaction[buttonNumber];
+            currentNPC.npcAffinity += currentNPC.gardenResponseAffinity[buttonNumber];
         }
         else if (locationValue == 2)
         {
             dialogueBox.text = currentNPC.arcadeDateReaction[buttonNumber];
+            currentNPC.npcAffinity += currentNPC.gardenResponseAffinity[buttonNumber];
         }
         else if (locationValue == 3)
         {
             dialogueBox.text = currentNPC.aquariumDateReaction[buttonNumber];
+            currentNPC.npcAffinity += currentNPC.gardenResponseAffinity[buttonNumber];
         }
         dialogueSequence = 2;
         if(buttonNumber == 0)
