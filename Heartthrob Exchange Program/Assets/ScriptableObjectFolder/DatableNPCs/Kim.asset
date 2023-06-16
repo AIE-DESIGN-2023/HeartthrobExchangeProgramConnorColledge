@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Kim
   m_EditorClassIdentifier: 
   npcName: Kim
-  npcAffinity: 200
+  npcAffinity: 70
   bodySprite: {fileID: 714632428, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
   happyFace: {fileID: -1560684334, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
   blushingFace: {fileID: -522930574, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
@@ -36,7 +36,7 @@ MonoBehaviour:
   - Oh man, do you think this one's edible?
   - At least they're pretty.
   - Flowers instill a sense of peace in one's heart...
-  gardenResponseAffinity: 000000000000000000000000
+  gardenResponseAffinity: 0f00000005000000ecffffff
   gardenDateReaction:
   - '"Interesting question! Our only recourse is to apply the Scientific Method"'
   - '"I guess. They''d be prettier if they could change colour."'
@@ -47,7 +47,7 @@ MonoBehaviour:
   - I enjoy observing the drunkards.
   - Yep. I have a serious alcohol problem.
   - Only when the company is particularly enchanting.
-  barResponseAffinity: 000000000000000000000000
+  barResponseAffinity: 0f00000005000000ecffffff
   barDateReaction:
   - '"Oh, collecting data are we? I''d love to discuss what you''ve observed"'
   - '"Nice. I have a weakness for stimulants myself."'
@@ -58,7 +58,7 @@ MonoBehaviour:
   - 'I''ll stomp you in Meat Punchers 3: Turbo Edition!'
   - I'd like to play a light gun game.
   - Calm yourself! You're making a scene...
-  arcadeResponseAffinity: 000000000000000000000000
+  arcadeResponseAffinity: 0f00000005000000ecffffff
   arcadeDateReaction:
   - '"Them''s fighting words, scrub! Come at me!"'
   - '"Those things are coin vacuums but I''d be happy to show a lowly peon such as
@@ -70,7 +70,7 @@ MonoBehaviour:
   - 'Don''t you think their teeth are scary? '
   - Dolphins should be left in the wild...
   - They're such intelligent creatures.
-  aquariumResponseAffinity: 000000000000000000000000
+  aquariumResponseAffinity: 0f00000005000000ecffffff
   aquariumDateReaction:
   - '"Oh! I see you have a keen eye for important details! Their teeth are in fact
     quite terrifying..."'

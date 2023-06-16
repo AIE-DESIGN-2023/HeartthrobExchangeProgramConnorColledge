@@ -20,6 +20,7 @@ public class NPCScriptableObject : ScriptableObject
     public Sprite bodySprite;
     public Sprite happyFace;
     public Sprite blushingFace;
+    public Sprite neutralFace;
     public Sprite angryFace;
     public Sprite sadFace;
 

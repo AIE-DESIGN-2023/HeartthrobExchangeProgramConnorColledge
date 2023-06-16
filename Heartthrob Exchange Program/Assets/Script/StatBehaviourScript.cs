@@ -70,46 +70,82 @@ public class StatBehaviourScript : MonoBehaviour
             if (activity.playerStats[statNumber] == ActivityScriptableObject.PlayerStats.stress)
             {
                 stressValue += activity.value[statNumber];
+                if(stressValue <= 0)
+                {
+                    stressValue = 0;
+                }
             }
 
             if (activity.playerStats[statNumber] == ActivityScriptableObject.PlayerStats.academics)
             {
                 academicsValue += activity.value[statNumber];
+                if (academicsValue <= 0)
+                {
+                    academicsValue = 0;
+                }
             }
 
             if (activity.playerStats[statNumber] == ActivityScriptableObject.PlayerStats.athletics)
             {
                 athleticsValue += activity.value[statNumber];
+                if (athleticsValue <= 0)
+                {
+                    athleticsValue = 0;
+                }
             }
 
             if (activity.playerStats[statNumber] == ActivityScriptableObject.PlayerStats.arts)
             {
                 artsValue += activity.value[statNumber];
+                if (artsValue <= 0)
+                {
+                    artsValue = 0;
+                }
             }
 
             if (activity.playerStats[statNumber] == ActivityScriptableObject.PlayerStats.tech)
             {
                 techValue += activity.value[statNumber];
+                if (techValue <= 0)
+                {
+                    techValue = 0;
+                }
             }
 
             if (activity.playerStats[statNumber] == ActivityScriptableObject.PlayerStats.culture)
             {
                 cultureValue += activity.value[statNumber];
+                if (cultureValue <= 0)
+                {
+                    cultureValue = 0;
+                }
             }
 
             if (activity.playerStats[statNumber] == ActivityScriptableObject.PlayerStats.conversationalism)
             {
                 conversationalismValue += activity.value[statNumber];
+                if (conversationalismValue <= 0)
+                {
+                    conversationalismValue = 0;
+                }
             }
 
             if (activity.playerStats[statNumber] == ActivityScriptableObject.PlayerStats.confidence)
             {
                 confidenceValue += activity.value[statNumber];
+                if (confidenceValue <= 0)
+                {
+                    confidenceValue = 0;
+                }
             }
 
             if (activity.playerStats[statNumber] == ActivityScriptableObject.PlayerStats.appearance)
             {
                 appearanceValue += activity.value[statNumber];
+                if (appearanceValue <= 0)
+                {
+                    appearanceValue = 0;
+                }
             }
             statNumber++;
         }

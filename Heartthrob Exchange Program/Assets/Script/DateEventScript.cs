@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class DateEventScript : MonoBehaviour
@@ -10,7 +11,8 @@ public class DateEventScript : MonoBehaviour
     public int locationValue;
     public int npcValue;
     public int dayCheck;
-    public GameObject dateNPC;
+    public Image npcSprite;
+    public Image npcFace;
     public GameObject nextButton;
     public GameObject returnButton;
     public int dialogueSequence;
@@ -39,7 +41,7 @@ public class DateEventScript : MonoBehaviour
     void Start()
     {
         dayManager = FindObjectOfType<DayManager>();
-        dateNPC.SetActive(false);
+        //dateNPC.SetActive(false);
         responseTop.SetActive(false);
         responseMiddle.SetActive(false);
         responseBottom.SetActive(false);
@@ -106,9 +108,35 @@ public class DateEventScript : MonoBehaviour
     //Presents the date sprite to the player, and randomly selects which conversation start to print to player
     public void DateArrives()
     {
-        dateNPC.SetActive(true);
+        //dateNPC.SetActive(true);
+        npcSprite.sprite = currentNPC.bodySprite;
         nameDisplay.text = currentNPC.npcName;
-        //int dialogueNumber = Random.Range(0, 3);
+
+        //checks NPC's affinity score against their emotion thresholds to determine NPC's facial emotion
+        if(currentNPC.npcAffinity >= 0 && currentNPC.npcAffinity < currentNPC.sadThreshold)
+        {
+            npcFace.sprite = currentNPC.angryFace;
+        }
+        else if(currentNPC.npcAffinity >= currentNPC.sadThreshold && currentNPC.npcAffinity < currentNPC.neutralThreshold)
+        {
+            npcFace.sprite = currentNPC.sadFace;
+        }
+        else if(currentNPC.npcAffinity >= currentNPC.neutralThreshold && currentNPC.npcAffinity < currentNPC.happyThreshold)
+        {
+            npcFace.sprite = currentNPC.neutralFace;
+        }
+        else if(currentNPC.npcAffinity >= currentNPC.happyThreshold && currentNPC.npcAffinity < currentNPC.blushingThreshold)
+        {
+            npcFace.sprite = currentNPC.happyFace;
+        }
+        else if(currentNPC.npcAffinity >= currentNPC.blushingThreshold)
+        {
+            npcFace.sprite = currentNPC.blushingFace;
+        }
+
+
+        
+        //Generates first dialogue prompt from NPC's writable script
         if (locationValue == 0)
         {
             int dialogueNumber = Random.Range(0, currentNPC.gardensDialoguePromptText.Length);

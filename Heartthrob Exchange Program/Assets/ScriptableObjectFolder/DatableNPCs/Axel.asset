@@ -13,14 +13,15 @@ MonoBehaviour:
   m_Name: Axel
   m_EditorClassIdentifier: 
   npcName: Axel
-  npcAffinity: 120
-  bodySprite: {fileID: 714632428, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
+  npcAffinity: 150
+  bodySprite: {fileID: 21300000, guid: 8f1fd2f092c32424fab892fc13723e5b, type: 3}
   happyFace: {fileID: -1560684334, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
   blushingFace: {fileID: -522930574, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
+  neutralFace: {fileID: 0}
   angryFace: {fileID: 976732633, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
   sadFace: {fileID: -1667447871, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
   scheduledLocation: 0
-  scheduledDay: 1
+  scheduledDay: 2
   scheduledNPC: 2
   angerThreshold: 10
   unimpressedThreshold: 30
@@ -35,7 +36,7 @@ MonoBehaviour:
   - Oh man, do you think this one's edible?
   - Do you... hate that about them?
   - What? Of course they don't move.
-  gardenResponseAffinity: 0f00000005000000f6ffffff
+  gardenResponseAffinity: 0f00000005000000ecffffff
   gardenDateReaction:
   - '"Axel no likey vegetles"'
   - '"I guess I don''t hate that about them? But I also don''t really like that about
@@ -47,7 +48,7 @@ MonoBehaviour:
   - I enjoy the company that comes with a place like this
   - I enjoy observing the drunkards.
   - Do you have an alcohol problem?
-  barResponseAffinity: 0f00000005000000f6ffffff
+  barResponseAffinity: 0f00000005000000ecffffff
   barDateReaction:
   - '"Bars are a melting pot of the most interesting people you''ll ever meet. I''m
     glad you understand that"'
@@ -60,7 +61,7 @@ MonoBehaviour:
   - I'm sorry, I didn't think about that... You wanna go somewhere else?
   - You don't like kids?
   - Hey! Adults can like the arcade too, ya big butt!
-  arcadeResponseAffinity: 0f00000005000000f6ffffff
+  arcadeResponseAffinity: 0f00000005000000ecffffff
   arcadeDateReaction:
   - '"Oh no, that''s fine! It''s been a hot minute since I''ve played Air Hockey
     anyway!"'
@@ -73,7 +74,7 @@ MonoBehaviour:
   - Dolphins should be left in the wild...
   - Dolphins are such intelligent creatures...
   - Don't you think their teeth are scary?
-  aquariumResponseAffinity: 000000000000000000000000
+  aquariumResponseAffinity: 0f00000005000000ecffffff
   aquariumDateReaction:
   - '"Hell yeah... Swim free, live free, that''s my motto!"'
   - '"I''ll take that implied compliment! Thanks!" '

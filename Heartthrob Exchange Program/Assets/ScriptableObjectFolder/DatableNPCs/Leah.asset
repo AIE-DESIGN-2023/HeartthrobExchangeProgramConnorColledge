@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Leah
   m_EditorClassIdentifier: 
   npcName: Leah
-  npcAffinity: 200
+  npcAffinity: 70
   bodySprite: {fileID: 714632428, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
   happyFace: {fileID: -1560684334, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
   blushingFace: {fileID: -522930574, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
@@ -35,7 +35,7 @@ MonoBehaviour:
   - Indeed... truly it seems to instill peace in one's heart...
   - They sure are pretty.
   - Oh man, do you think this one's edible?
-  gardenResponseAffinity: 000000000000000000000000
+  gardenResponseAffinity: 0f00000005000000ecffffff
   gardenDateReaction:
   - '"Wow... I completely agree. How nice that we can share in the peace together." '
   - '"The colours compliment the season beautifully..."'
@@ -46,7 +46,7 @@ MonoBehaviour:
   - Only when the company is particularly enchanting.
   - Are you... flirting with me?
   - Yep. I have a serious alcohol problem.
-  barResponseAffinity: 000000000000000000000000
+  barResponseAffinity: 0f00000005000000ecffffff
   barDateReaction:
   - (blush) "Y-y-you're just saying that!"
   - '"Oh! Well... if you want me to be..."'
@@ -57,7 +57,7 @@ MonoBehaviour:
   - 'It''s nice to let yourself be a kid every once in a while. '
   - Dude, I practically live here...
   - Excuse you? Adults are allowed to enjoy the arcade too ya know!
-  arcadeResponseAffinity: 000000000000000000000000
+  arcadeResponseAffinity: 0f00000005000000ecffffff
   arcadeDateReaction:
   - '"I agree! Hey, let''s play the air hockey!"'
   - '"Oh? Well, by all means lead the way. I''m sure you which are the good games." '
@@ -68,7 +68,7 @@ MonoBehaviour:
   - They're such intelligent creatures.
   - Don't you think their teeth are scary?
   - Did you know that dolphins are actually mammals?
-  aquariumResponseAffinity: 000000000000000000000000
+  aquariumResponseAffinity: 0f00000005000000ecffffff
   aquariumDateReaction:
   - '"Nature can be so beautiful..."'
   - '"No, but that''s certainly an interesting observation!"'
