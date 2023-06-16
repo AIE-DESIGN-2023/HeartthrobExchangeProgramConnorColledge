@@ -199,7 +199,8 @@ public class DateEventScript : MonoBehaviour
         if (locationValue == 0)
         {
             dialogueBox.text = currentNPC.GardenDateReaction[buttonNumber];
-            
+            //adds the responses affinity value to the NPC's affinity score
+            //currentNPC.npcAffinity + currentNPC. 
         }
         else if (locationValue == 1)
         {

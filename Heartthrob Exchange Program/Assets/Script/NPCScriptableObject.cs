@@ -31,6 +31,18 @@ public class NPCScriptableObject : ScriptableObject
     public int scheduledDay;
     public int scheduledNPC;
 
+    //int values to determine emotional thresholds for affinity check script
+    [Space]
+    [Header("Emotional State Thresholds")]
+    [Space]
+    public int angerThreshold;
+    public int unimpressedThreshold;
+    public int sadThreshold;
+    public int neutralThreshold;
+    public int amusedThreshold;
+    public int happyThreshold;
+    public int blushingThreshold;
+
 
     //Dialogue script variables and int values, divided by location
     [Space]

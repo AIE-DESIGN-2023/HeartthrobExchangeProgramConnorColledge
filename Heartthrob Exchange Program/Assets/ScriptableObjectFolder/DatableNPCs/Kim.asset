@@ -13,15 +13,22 @@ MonoBehaviour:
   m_Name: Kim
   m_EditorClassIdentifier: 
   npcName: Kim
-  npcAffinity: 50
+  npcAffinity: 200
   bodySprite: {fileID: 714632428, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
   happyFace: {fileID: -1560684334, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
   blushingFace: {fileID: -522930574, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
   angryFace: {fileID: 976732633, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
   sadFace: {fileID: -1667447871, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
   scheduledLocation: 2
-  scheduledDay: 5
+  scheduledDay: 0
   scheduledNPC: 2
+  angerThreshold: 15
+  unimpressedThreshold: 55
+  sadThreshold: 60
+  neutralThreshold: 70
+  amusedThreshold: 80
+  happyThreshold: 100
+  blushingThreshold: 160
   GardensDialoguePromptText:
   - '"Hmph... Flowers... Their biology is interesting by themselves they aren''t
     particularly exciting, huh?"'

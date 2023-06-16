@@ -13,15 +13,22 @@ MonoBehaviour:
   m_Name: Leah
   m_EditorClassIdentifier: 
   npcName: Leah
-  npcAffinity: 50
+  npcAffinity: 200
   bodySprite: {fileID: 714632428, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
   happyFace: {fileID: -1560684334, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
   blushingFace: {fileID: -522930574, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
   angryFace: {fileID: 976732633, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
   sadFace: {fileID: -1667447871, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
   scheduledLocation: 0
-  scheduledDay: 3
+  scheduledDay: 0
   scheduledNPC: 1
+  angerThreshold: 10
+  unimpressedThreshold: 30
+  sadThreshold: 45
+  neutralThreshold: 90
+  amusedThreshold: 110
+  happyThreshold: 140
+  blushingThreshold: 240
   GardensDialoguePromptText:
   - '"What a wonderful arrangement of flowers..."'
   GardenPlayerResponse:
