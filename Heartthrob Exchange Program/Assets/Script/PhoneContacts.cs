@@ -218,7 +218,7 @@ public class PhoneContacts : MonoBehaviour
     public void LocationQuestion()
     {
         receivedContainer1.SetActive(true);
-        receivedText1.text = text2Content;
+        receivedText1.text = currentNPC.dateQuestion;
         travelGuide.SetActive(true);
         sendButton.SetActive(false);
         
@@ -262,7 +262,7 @@ public class PhoneContacts : MonoBehaviour
     public void AcceptanceRefusal()
     {
         receivedContainer2.SetActive(true);
-        receivedText2.text = text4Content;
+        receivedText2.text = currentNPC.dateApproval;
         textSequence = 0;
         sendButton.SetActive(false);
         returnButton.SetActive(true);

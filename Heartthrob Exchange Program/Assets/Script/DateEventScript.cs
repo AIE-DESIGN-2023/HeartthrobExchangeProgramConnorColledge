@@ -230,21 +230,93 @@ public class DateEventScript : MonoBehaviour
             dialogueBox.text = currentNPC.gardenDateReaction[buttonNumber];
             //adds the responses affinity value to the NPC's affinity score
             currentNPC.npcAffinity += currentNPC.gardenResponseAffinity[buttonNumber];
+            
+            
+            //adjusts face based on response affinity value.
+            //This could be it's own function if you clean up DialogueChosen function to check for a location value once
+            if(currentNPC.gardenResponseAffinity[buttonNumber] <= 0)
+            {
+                npcFace.sprite = currentNPC.angryFace;
+            }
+            else if(currentNPC.gardenResponseAffinity[buttonNumber] > 0 && currentNPC.gardenResponseAffinity[buttonNumber] <= 5)
+            {
+                npcFace.sprite = currentNPC.neutralFace;
+            }
+            else if(currentNPC.gardenResponseAffinity[buttonNumber] > 5 && currentNPC.gardenResponseAffinity[buttonNumber] <= 10)
+            {
+                npcFace.sprite = currentNPC.happyFace;
+            }
+            else if (currentNPC.gardenResponseAffinity[buttonNumber] < 10)
+            {
+                npcFace.sprite = currentNPC.blushingFace;
+            }
+
         }
         else if (locationValue == 1)
         {
             dialogueBox.text = currentNPC.barDateReaction[buttonNumber];
-            currentNPC.npcAffinity += currentNPC.gardenResponseAffinity[buttonNumber];
+            currentNPC.npcAffinity += currentNPC.barResponseAffinity[buttonNumber];
+
+            if (currentNPC.barResponseAffinity[buttonNumber] <= 0)
+            {
+                npcFace.sprite = currentNPC.angryFace;
+            }
+            else if (currentNPC.barResponseAffinity[buttonNumber] > 0 && currentNPC.barResponseAffinity[buttonNumber] <= 5)
+            {
+                npcFace.sprite = currentNPC.neutralFace;
+            }
+            else if (currentNPC.barResponseAffinity[buttonNumber] > 5 && currentNPC.barResponseAffinity[buttonNumber] <= 10)
+            {
+                npcFace.sprite = currentNPC.happyFace;
+            }
+            else if (currentNPC.barResponseAffinity[buttonNumber] < 10)
+            {
+                npcFace.sprite = currentNPC.blushingFace;
+            }
         }
         else if (locationValue == 2)
         {
             dialogueBox.text = currentNPC.arcadeDateReaction[buttonNumber];
-            currentNPC.npcAffinity += currentNPC.gardenResponseAffinity[buttonNumber];
+            currentNPC.npcAffinity += currentNPC.arcadeResponseAffinity[buttonNumber];
+
+            if (currentNPC.arcadeResponseAffinity[buttonNumber] <= 0)
+            {
+                npcFace.sprite = currentNPC.angryFace;
+            }
+            else if (currentNPC.arcadeResponseAffinity[buttonNumber] > 0 && currentNPC.arcadeResponseAffinity[buttonNumber] <= 5)
+            {
+                npcFace.sprite = currentNPC.neutralFace;
+            }
+            else if (currentNPC.arcadeResponseAffinity[buttonNumber] > 5 && currentNPC.arcadeResponseAffinity[buttonNumber] <= 10)
+            {
+                npcFace.sprite = currentNPC.happyFace;
+            }
+            else if (currentNPC.arcadeResponseAffinity[buttonNumber] < 10)
+            {
+                npcFace.sprite = currentNPC.blushingFace;
+            }
         }
         else if (locationValue == 3)
         {
             dialogueBox.text = currentNPC.aquariumDateReaction[buttonNumber];
-            currentNPC.npcAffinity += currentNPC.gardenResponseAffinity[buttonNumber];
+            currentNPC.npcAffinity += currentNPC.aquariumResponseAffinity[buttonNumber];
+
+            if (currentNPC.aquariumResponseAffinity[buttonNumber] <= 0)
+            {
+                npcFace.sprite = currentNPC.angryFace;
+            }
+            else if (currentNPC.aquariumResponseAffinity[buttonNumber] > 0 && currentNPC.aquariumResponseAffinity[buttonNumber] <= 5)
+            {
+                npcFace.sprite = currentNPC.neutralFace;
+            }
+            else if (currentNPC.aquariumResponseAffinity[buttonNumber] > 5 && currentNPC.aquariumResponseAffinity[buttonNumber] <= 10)
+            {
+                npcFace.sprite = currentNPC.happyFace;
+            }
+            else if (currentNPC.aquariumResponseAffinity[buttonNumber] < 10)
+            {
+                npcFace.sprite = currentNPC.blushingFace;
+            }
         }
         dialogueSequence = 2;
         if(buttonNumber == 0)

@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9d8aacc6e81ec24bb2a52441ad31cb1, type: 3}
+  m_Name: Nova
+  m_EditorClassIdentifier: 
+  npcName: Nova
+  npcAffinity: 70
+  bodySprite: {fileID: 714632428, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
+  happyFace: {fileID: -1560684334, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
+  blushingFace: {fileID: -522930574, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
+  neutralFace: {fileID: 0}
+  angryFace: {fileID: 976732633, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
+  sadFace: {fileID: -1667447871, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
+  scheduledLocation: 0
+  scheduledDay: 0
+  scheduledNPC: 1
+  angerThreshold: 10
+  unimpressedThreshold: 30
+  sadThreshold: 45
+  neutralThreshold: 90
+  amusedThreshold: 110
+  happyThreshold: 140
+  blushingThreshold: 240
+  dateQuestion: Where and when?
+  dateApproval: Yeah, I'm free that day. Let's do it.
+  gardensDialoguePromptText:
+  - '"I bet this is a great place to run!"'
+  gardenPlayerResponse:
+  - That sounds like fun! Let's do it now!
+  - Running makes me tired.
+  - Don't you realize that would ruin the ambience?
+  gardenResponseAffinity: 0f00000005000000ecffffff
+  gardenDateReaction:
+  - '"Oh! Well, I didn''t bring my running clothes, but I love the enthusiasm! Perhaps
+    another time..."" '
+  - '"Sounds like somebody needs to go running more often!"'
+  - '"I didn''t say I was gonna do it... Just that it would be nice."'
+  barDialoguePromptText:
+  - '"Could you order me a diet lemonade, please?"'
+  barPlayerResponse:
+  - Wise choice, you gotta watch out for sugar.
+  - Not a big alcohol fan?
+  - You should get a proper drink, like an adult would.
+  barResponseAffinity: 0f00000005000000ecffffff
+  barDateReaction:
+  - '"Absolutely, sugar is the first thing I cut out when I started training."'
+  - '"I just don''t like the way alcohol makes me feel, y''know?"'
+  - '"I fail to see how inebriating one''s self makes them more adult-like..."'
+  arcadeDialoguePromptText:
+  - '"I''ve never really tried videogames before"'
+  arcadePlayerResponse:
+  - I like to think of videogames as their own kind of sport.
+  - Would you like to do something else?
+  - I guess videogames aren't for people like you
+  arcadeResponseAffinity: 0f00000005000000ecffffff
+  arcadeDateReaction:
+  - '"Oh really? We''d better get training then!"'
+  - '"No, no! I was excited to see what all the fuss was about!"'
+  - '"Why don''t you let me be the judge of that, okay?"'
+  aquariumDialoguePromptText:
+  - '"What''s the biggest fish you think you could take in a fight?"'
+  aquariumPlayerResponse:
+  - Shark. No contest.
+  - Oh, I don't know... Maybe a dolphin?
+  - Why would anyone wanna hurt a living creature like that?
+  aquariumResponseAffinity: 0f00000005000000ecffffff
+  aquariumDateReaction:
+  - '"Pffft, you''re such a dweeb! You''d be shredded in seconds!"'
+  - '"Dolphin''s are jerks. ''bout time someone took them down a peg!"'
+  - '"Jeez, it''s just a hypothetical..."'

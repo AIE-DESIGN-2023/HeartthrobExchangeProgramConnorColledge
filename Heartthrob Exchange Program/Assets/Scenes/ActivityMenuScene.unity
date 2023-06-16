@@ -5557,6 +5557,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5c1bbdd60e0785e42aa896a4fc379865, type: 2}
   - {fileID: 11400000, guid: 705ad99886c76cf408e727916a281d24, type: 2}
   - {fileID: 11400000, guid: b916b5f885d9ce24cbefcc5831df7e66, type: 2}
+  - {fileID: 11400000, guid: 1b8dac7c636275a49be32fbe3ff80bab, type: 2}
+  - {fileID: 11400000, guid: 5ae505f1ab2101c4fb4198f0bb23ae64, type: 2}
+  - {fileID: 11400000, guid: dc10c08644384e440b1c3f4df7a90fac, type: 2}
   currentNPC: {fileID: 0}
   phoneBody: {fileID: 2075504644}
   headImages: {fileID: 1358957102}
@@ -17337,7 +17340,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1586890675
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17602,13 +17605,6 @@ MonoBehaviour:
   amusedFace: {fileID: 21300000, guid: 1c33676cc850651409c243377d9417d8, type: 3}
   happyFace: {fileID: 21300000, guid: cfeae2dd96ba4d142b1bb92d3d7162d8, type: 3}
   blushingFace: {fileID: 21300000, guid: e4c969d348246ce4fbd5f7ecac6ff858, type: 3}
-  angerThreshold: 10
-  unimpressedThreshold: 30
-  sadThreshold: 50
-  neutralThreshold: 70
-  amusedThreshold: 90
-  happyThreshold: 120
-  blushingThreshold: 150
   exitNotes: {fileID: 1915086159}
   noteBook: {fileID: 1586890674}
   pageOne: {fileID: 1660979418}
@@ -17618,6 +17614,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5c1bbdd60e0785e42aa896a4fc379865, type: 2}
   - {fileID: 11400000, guid: 705ad99886c76cf408e727916a281d24, type: 2}
   - {fileID: 11400000, guid: b916b5f885d9ce24cbefcc5831df7e66, type: 2}
+  - {fileID: 11400000, guid: 1b8dac7c636275a49be32fbe3ff80bab, type: 2}
+  - {fileID: 11400000, guid: 5ae505f1ab2101c4fb4198f0bb23ae64, type: 2}
+  - {fileID: 11400000, guid: dc10c08644384e440b1c3f4df7a90fac, type: 2}
 --- !u!1 &1606157646
 GameObject:
   m_ObjectHideFlags: 0
@@ -21998,8 +21997,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -83.77869, y: 203.34021}
-  m_SizeDelta: {x: 354.3525, y: 44.8606}
+  m_AnchoredPosition: {x: -83.779, y: 204}
+  m_SizeDelta: {x: 354.35, y: 76.3947}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1901685221
 MonoBehaviour:

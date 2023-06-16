@@ -20,8 +20,8 @@ MonoBehaviour:
   neutralFace: {fileID: 0}
   angryFace: {fileID: 976732633, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
   sadFace: {fileID: -1667447871, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
-  scheduledLocation: 0
-  scheduledDay: 2
+  scheduledLocation: 1
+  scheduledDay: 5
   scheduledNPC: 2
   angerThreshold: 10
   unimpressedThreshold: 30
@@ -30,6 +30,8 @@ MonoBehaviour:
   amusedThreshold: 90
   happyThreshold: 110
   blushingThreshold: 130
+  dateQuestion: You want a date? Where and when, babe?
+  dateApproval: You know I'm down for a good time. See you then ;)
   gardensDialoguePromptText:
   - '"Flowers don''t move much, huh."'
   gardenPlayerResponse:

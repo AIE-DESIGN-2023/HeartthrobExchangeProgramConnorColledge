@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9d8aacc6e81ec24bb2a52441ad31cb1, type: 3}
+  m_Name: Miguel
+  m_EditorClassIdentifier: 
+  npcName: Miguel
+  npcAffinity: 70
+  bodySprite: {fileID: 714632428, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
+  happyFace: {fileID: -1560684334, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
+  blushingFace: {fileID: -522930574, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
+  neutralFace: {fileID: 0}
+  angryFace: {fileID: 976732633, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
+  sadFace: {fileID: -1667447871, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
+  scheduledLocation: 0
+  scheduledDay: 0
+  scheduledNPC: 1
+  angerThreshold: 10
+  unimpressedThreshold: 30
+  sadThreshold: 45
+  neutralThreshold: 90
+  amusedThreshold: 110
+  happyThreshold: 140
+  blushingThreshold: 240
+  dateQuestion: Oh? What sorta date were you thinking?
+  dateApproval: Sure! It's great to see you getting out and about!
+  gardensDialoguePromptText:
+  - '"I didn''t know you liked flowers?"'
+  gardenPlayerResponse:
+  - I wanna know more about Spain's flora.
+  - Flowers fill me with a sense of peace.
+  - Why wouldn't I like flowers?
+  gardenResponseAffinity: 0f00000005000000ecffffff
+  gardenDateReaction:
+  - '"How wonderful! Spain has some very colourful flowers!"'
+  - '"Oh! Well by all means, don''t let me get in the way!"'
+  - '"I don''t know. They''re not everyone''s thing, I guess..."'
+  barDialoguePromptText:
+  - '"What were you thinking of getting?"'
+  barPlayerResponse:
+  - I'm a sucker for good tapas.
+  - What would you recommend?
+  - Just a beer, thanks.
+  barResponseAffinity: 0f00000005000000ecffffff
+  barDateReaction:
+  - '"Me too! We can get a bunch if you''re okay sharing!"'
+  - '"Well, if you''re feeling adventurous they do flaming cocktails here!"'
+  - '"Oh, sure. I guess I''ll get a beer too."'
+  arcadeDialoguePromptText:
+  - "\"My Mam\xE1 used to take me here when I as younger.\""
+  arcadePlayerResponse:
+  - Sounds like you had a good Mum.
+  - That's very cute.
+  - I didn't realize you were such a Momma's boy!
+  arcadeResponseAffinity: 0f00000005000000ceffffff
+  arcadeDateReaction:
+  - '"... the best."'
+  - '"Stop it! You''re gonna make me blush!"'
+  - '"... are you trying to piss me off on purpose?"'
+  aquariumDialoguePromptText:
+  - '"Oh! I wonder if they have a swordfish here!"'
+  aquariumPlayerResponse:
+  - Swordfish are so cool...
+  - I'm not sure. They have dolphins though.
+  - Swordfish are sooo pedestrian...
+  aquariumResponseAffinity: 0f00000005000000ecffffff
+  aquariumDateReaction:
+  - '"Right! What other animal can stab people with a headbutt!?!?'
+  - '"Dolphins are cool too, but let''s keep an eye out just in case!"'
+  - '"Is it so bad to be pedestrian?"'

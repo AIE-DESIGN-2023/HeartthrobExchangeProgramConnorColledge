@@ -17,6 +17,7 @@ MonoBehaviour:
   bodySprite: {fileID: 714632428, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
   happyFace: {fileID: -1560684334, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
   blushingFace: {fileID: -522930574, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
+  neutralFace: {fileID: 0}
   angryFace: {fileID: 976732633, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
   sadFace: {fileID: -1667447871, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
   scheduledLocation: 2
@@ -29,6 +30,8 @@ MonoBehaviour:
   amusedThreshold: 80
   happyThreshold: 100
   blushingThreshold: 160
+  dateQuestion: I'm extremely busy so a timeline would be great.
+  dateApproval: Damn... I'm free that day. I guess I'll show up for that.
   gardensDialoguePromptText:
   - '"Hmph... Flowers... Their biology is interesting by themselves they aren''t
     particularly exciting, huh?"'

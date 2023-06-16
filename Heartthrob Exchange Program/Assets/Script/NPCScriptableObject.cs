@@ -45,6 +45,13 @@ public class NPCScriptableObject : ScriptableObject
     public int blushingThreshold;
 
 
+    //strings that the phone can get text messages from
+    [Space]
+    [Header("Text messages")]
+    [Space]
+    public string dateQuestion;
+    public string dateApproval;
+
     //Dialogue script variables and int values, divided by location
     [Space]
     [Header("Garden Dialogue")]
