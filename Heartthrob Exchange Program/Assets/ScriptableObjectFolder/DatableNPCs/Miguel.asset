@@ -18,7 +18,7 @@ MonoBehaviour:
   happyFace: {fileID: -1560684334, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
   blushingFace: {fileID: -522930574, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
   neutralFace: {fileID: 0}
-  angryFace: {fileID: 976732633, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
+  angryFace: {fileID: 21300000, guid: 8565eb902939375409742d64fa2deea5, type: 3}
   sadFace: {fileID: -1667447871, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
   scheduledLocation: 0
   scheduledDay: 0

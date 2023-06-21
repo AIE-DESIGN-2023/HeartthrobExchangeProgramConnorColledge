@@ -706,8 +706,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -39}
-  m_SizeDelta: {x: 284.9765, y: 667.1844}
+  m_AnchoredPosition: {x: -1.8731, y: -270}
+  m_SizeDelta: {x: 438.5015, y: 1026.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &984053651
 MonoBehaviour:
@@ -1781,10 +1781,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 56
+  m_fontSize: 48.2
   m_fontSizeBase: 56
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -1879,6 +1879,7 @@ MonoBehaviour:
   locationValue: 0
   npcValue: 0
   dayCheck: 0
+  npcContainer: {fileID: 984053649}
   npcSprite: {fileID: 984053651}
   npcFace: {fileID: 2101198199}
   nextButton: {fileID: 1027190179}
@@ -1887,12 +1888,20 @@ MonoBehaviour:
   impressionQuality: 
   nameDisplay: {fileID: 1524215379}
   playerName: ...
+  currentDay: 0
+  backgroundImage: {fileID: 2127037484}
+  gardensBackground: {fileID: 21300000, guid: a7039f28722231543949e29624aa8e12, type: 3}
+  barBackground: {fileID: 21300000, guid: 47f2ab56284e98a42a296a15f584a098, type: 3}
+  arcadeBackground: {fileID: 21300000, guid: 6cc8a9249b768ad4f890e18e670335e5, type: 3}
+  aquariumBackground: {fileID: 21300000, guid: 324ea4b73924479489a22e0b5da85c37, type: 3}
   allNPCs:
   - {fileID: 11400000, guid: 5c1bbdd60e0785e42aa896a4fc379865, type: 2}
   - {fileID: 11400000, guid: 705ad99886c76cf408e727916a281d24, type: 2}
   - {fileID: 11400000, guid: b916b5f885d9ce24cbefcc5831df7e66, type: 2}
   - {fileID: 11400000, guid: 1b8dac7c636275a49be32fbe3ff80bab, type: 2}
   - {fileID: 11400000, guid: 5ae505f1ab2101c4fb4198f0bb23ae64, type: 2}
+  - {fileID: 11400000, guid: 55a4f8a35a40afb458bdd215a2205c2d, type: 2}
+  - {fileID: 11400000, guid: 2b73e07acd77e594fb5efd21507ac98c, type: 2}
   - {fileID: 11400000, guid: dc10c08644384e440b1c3f4df7a90fac, type: 2}
   responseTop: {fileID: 1403422907}
   responseMiddle: {fileID: 242129178}
@@ -2650,8 +2659,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7.3, y: 187.8}
-  m_SizeDelta: {x: 31.4744, y: 32.698}
+  m_AnchoredPosition: {x: 8, y: 298}
+  m_SizeDelta: {x: 82.4679, y: 85.6739}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2101198198
 CanvasRenderer:

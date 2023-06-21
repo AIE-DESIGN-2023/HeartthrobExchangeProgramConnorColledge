@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9d8aacc6e81ec24bb2a52441ad31cb1, type: 3}
+  m_Name: Susannah
+  m_EditorClassIdentifier: 
+  npcName: Susannah
+  npcAffinity: 65
+  bodySprite: {fileID: 714632428, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
+  happyFace: {fileID: -1560684334, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
+  blushingFace: {fileID: -522930574, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
+  neutralFace: {fileID: 0}
+  angryFace: {fileID: 21300000, guid: 8565eb902939375409742d64fa2deea5, type: 3}
+  sadFace: {fileID: -1667447871, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
+  scheduledLocation: 2
+  scheduledDay: 0
+  scheduledNPC: 5
+  angerThreshold: 10
+  unimpressedThreshold: 30
+  sadThreshold: 45
+  neutralThreshold: 90
+  amusedThreshold: 110
+  happyThreshold: 140
+  blushingThreshold: 240
+  dateQuestion: Hmmm... that depends on what we'd be doing.
+  dateApproval: I think I can make time for that. Looking forward to it.
+  gardensDialoguePromptText:
+  - '"Thank you for bringing me here. It''s welcomingly soothing"'
+  gardenPlayerResponse:
+  - It's important to stop every once and a while and let the world in.
+  - You are most welcome!
+  - Hey, you dare me to eat this one?
+  gardenResponseAffinity: 0f00000005000000ecffffff
+  gardenDateReaction:
+  - '"It is indeed. It''s a miracle whenever you can find the time..."'
+  - '"Maybe I ought to start bringing my study materials here."'
+  - '"I certainly would never encourage such behaviour..."'
+  barDialoguePromptText:
+  - '"My Father spent a lot of time in places like this."'
+  barPlayerResponse:
+  - I'm sorry to here that. I know alcoholism can be rough.
+  - Do you hate bars?
+  - My man!
+  barResponseAffinity: 0f00000005000000ecffffff
+  barDateReaction:
+  - '"Oh, it wasn''t like that. The company had a drinking culture and his position
+    in the company meant holding meetings with all the business associates. Though
+    I appreciate your kind words anyway""'
+  - '"I''m mostly indifferent. Company culture tends to include spending time in
+    bars, so it would be prudent for me to start getting used to them.""'
+  - '"Yes well... if you don''t mind I''ll just be doing some work in my notebook.
+    Feel free to order something for yourself."'
+  arcadeDialoguePromptText:
+  - '"My Mother always told me these places were unbecoming for a woman to hang around.""'
+  arcadePlayerResponse:
+  - Did that bother you?
+  - Would you like to go somewhere else?
+  - The trick is to find the biggest guy and beat them up...
+  arcadeResponseAffinity: 0f00000005000000ecffffff
+  arcadeDateReaction:
+  - '"Not at the time, but thinking back I would''ve appreciated the oppurtunity
+    to make up my own mind about it.""'
+  - '"I''m actually rather intrigued, if you don''t mind showing me around, that
+    is?"'
+  - '"I was warned there''d be violence..."'
+  aquariumDialoguePromptText:
+  - '"I''ve never seen dolphins up close before..."'
+  aquariumPlayerResponse:
+  - They're such intelligent creatures...
+  - Don't you think they have scary teeth?
+  - Did you know that dolphins are actually mammals?
+  aquariumResponseAffinity: 0f00000005000000ecffffff
+  aquariumDateReaction:
+  - '"One can only wonder what dolphins really think of us..."'
+  - '"What an amusing anecdote! Looking at them, I guess the size and sharpness is
+    just a little unsettling..."'
+  - '"Do you think me some kind of dullard?"'

@@ -11,6 +11,7 @@ public class DateEventScript : MonoBehaviour
     public int locationValue;
     public int npcValue;
     public int dayCheck;
+    public GameObject npcContainer;
     public Image npcSprite;
     public Image npcFace;
     public GameObject nextButton;
@@ -22,6 +23,18 @@ public class DateEventScript : MonoBehaviour
 
 
     private DayManager dayManager;
+    public int currentDay;
+
+    //Location background variables
+    [Space]
+    [Header ("Background sprites")]
+    [Space]
+    public Image backgroundImage;
+    public Sprite gardensBackground;
+    public Sprite barBackground;
+    public Sprite arcadeBackground;
+    public Sprite aquariumBackground;
+    [Space]
 
 
     //Scriptable object variables
@@ -41,7 +54,8 @@ public class DateEventScript : MonoBehaviour
     void Start()
     {
         dayManager = FindObjectOfType<DayManager>();
-        //dateNPC.SetActive(false);
+        currentDay = dayManager.currentDay;
+        npcContainer.SetActive(false);
         responseTop.SetActive(false);
         responseMiddle.SetActive(false);
         responseBottom.SetActive(false);
@@ -102,13 +116,31 @@ public class DateEventScript : MonoBehaviour
     public void LocationIdentifier()
     {
         locationValue = currentNPC.scheduledLocation;
+
+        //sets the background image
+        if (locationValue == 0)
+        {
+            backgroundImage.sprite = gardensBackground;
+        }
+        else if(locationValue == 1)
+        {
+            backgroundImage.sprite = barBackground;
+        }
+        else if(locationValue == 2)
+        {
+            backgroundImage.sprite = arcadeBackground;
+        }
+        else if(locationValue == 3)
+        {
+            backgroundImage.sprite = aquariumBackground;
+        }
     }
 
 
     //Presents the date sprite to the player, and randomly selects which conversation start to print to player
     public void DateArrives()
     {
-        //dateNPC.SetActive(true);
+        npcContainer.SetActive(true);
         npcSprite.sprite = currentNPC.bodySprite;
         nameDisplay.text = currentNPC.npcName;
 
@@ -210,7 +242,7 @@ public class DateEventScript : MonoBehaviour
 
     public void DateResponse()
     {
-        nameDisplay.text = currentNPC.npcName;
+        nameDisplay.text = playerName;
         dialogueBox.text = "I seemed to have left a " + impressionQuality + " impression!";
         nextButton.SetActive(false);
         returnButton.SetActive(true);
@@ -220,7 +252,7 @@ public class DateEventScript : MonoBehaviour
     //Gets response element from NPC scriptable when player clicks on dialogue button
     public void DialogueChosen(int buttonNumber)
     {
-        nameDisplay.text = playerName;
+        nameDisplay.text = currentNPC.npcName;
         responseTop.SetActive(false);
         responseMiddle.SetActive(false);
         responseBottom.SetActive(false);
@@ -331,6 +363,7 @@ public class DateEventScript : MonoBehaviour
         {
             impressionQuality = "bad";
         }
+        UnscheduleDate();
     }
 
 
@@ -349,8 +382,16 @@ public class DateEventScript : MonoBehaviour
         {
             DateResponse();
         }
-    }
 
+
+    }
+    
+    //resets the scheduled date
+    public void UnscheduleDate()
+    {
+        currentNPC.scheduledDay = 0;
+        dayManager.days[currentDay] = 0;
+    }
 
 
 }

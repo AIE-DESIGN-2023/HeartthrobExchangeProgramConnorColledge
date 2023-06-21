@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9d8aacc6e81ec24bb2a52441ad31cb1, type: 3}
+  m_Name: Ostentatia
+  m_EditorClassIdentifier: 
+  npcName: Ostentatia
+  npcAffinity: 65
+  bodySprite: {fileID: 714632428, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
+  happyFace: {fileID: -1560684334, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
+  blushingFace: {fileID: -522930574, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
+  neutralFace: {fileID: 0}
+  angryFace: {fileID: 21300000, guid: 8565eb902939375409742d64fa2deea5, type: 3}
+  sadFace: {fileID: -1667447871, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
+  scheduledLocation: 3
+  scheduledDay: 0
+  scheduledNPC: 6
+  angerThreshold: 10
+  unimpressedThreshold: 30
+  sadThreshold: 45
+  neutralThreshold: 90
+  amusedThreshold: 110
+  happyThreshold: 140
+  blushingThreshold: 240
+  dateQuestion: My my! A date? Where would we be going?
+  dateApproval: How could I resist such a tempting proposal ;)
+  gardensDialoguePromptText:
+  - '"I''m going to take some snaps if you don''t mind."'
+  gardenPlayerResponse:
+  - Trying to immortalise the memory of this date?
+  - By all means...
+  - '[Attempt to photobomb]'
+  gardenResponseAffinity: 0f00000005000000ecffffff
+  gardenDateReaction:
+  - '"Haha! No, I was looking for fashion inspiration but your confidence is simply
+    precious!""'
+  - '"Thanks, these patterns will make for a wonderful springtime outfit..."'
+  - '"Very amusing, honey, but I was actually taking these for research purposes..."'
+  barDialoguePromptText:
+  - '"Go ahead and order me something"'
+  barPlayerResponse:
+  - Two shots of 'Bombastic Love', please and thank you.
+  - Wouldn't you prefer to order for yourself?
+  - Uh... one beer please?
+  barResponseAffinity: 0f00000005000000ecffffff
+  barDateReaction:
+  - '"Simply splendid! Extra whip cream on mine, thanks!"'
+  - '"I''m just curious to see what you''d think I''d like."'
+  - '"Incorrect, I''ll have a Sangria."'
+  arcadeDialoguePromptText:
+  - '"You made a mistake bringing me here..."'
+  arcadePlayerResponse:
+  - Oh?
+  - I'm sorry, we can go somewhere else if you'd like.
+  - We're here now, you should at least try to enjoy it...
+  arcadeResponseAffinity: 0f00000005000000ecffffff
+  arcadeDateReaction:
+  - '"... you''ve brought an old master back to their old stomping grounds. Prepare
+    to die a painful and humiliating death?"'
+  - '"You misunderstand. I''m about to wallop every which way ''til Sunday in Meat
+    Punchers!"'
+  - '"Oh, should I now?"'
+  aquariumDialoguePromptText:
+  - Oh my god, all these fish are so pretty!
+  aquariumPlayerResponse:
+  - Aren't the colours lovely?
+  - Personally, I prefer the bigger fish.
+  - Did you know that dolphins are actually mammals?
+  aquariumResponseAffinity: 0f00000005000000ecffffff
+  aquariumDateReaction:
+  - '"My thoughts exactly! It''s unfair they get to be so naturally vibrant!"'
+  - '"Big is beautiful, babe! Speak your truth!"'
+  - '"Wow! I am incredibly uninterested!"'
