@@ -49,8 +49,9 @@ public class PhoneContacts : MonoBehaviour
     [Header("Text Objects")]
     [Space]
     public TMP_Text phoneHeader;
-    
 
+    private string textedLocation;
+    private string textedDay;
 
     [Space]
     [Header("Text Sequence Objects")]
@@ -67,10 +68,11 @@ public class PhoneContacts : MonoBehaviour
     public TMP_Text receivedText2;
     public string text1Content;
     public string text2Content;
-    public string text3Content;
+    private string text3Content;
     public string text4Content;
 
     private int textSequence;
+
 
     public int dateModifier;
 
@@ -86,6 +88,7 @@ public class PhoneContacts : MonoBehaviour
         dateCalendar.SetActive(false);
         calendarFocus.SetActive(false);
 
+
         dayManager = FindObjectOfType<DayManager>();
         ScheduleClear();
 
@@ -100,9 +103,9 @@ public class PhoneContacts : MonoBehaviour
     {
         for (int i = 0; i < allNPCs.Length; i++)
         {
-            if (allNPCs[i].scheduledDay != 0)
+            if (allNPCs[i].scheduledDay != -1)
             {
-                allNPCs[i].scheduledDay = 0;
+                allNPCs[i].scheduledDay = -1;
             }
         }
     }
@@ -122,6 +125,7 @@ public class PhoneContacts : MonoBehaviour
         textsContainer.SetActive(false);
 
         textSequence = 0;
+        AlreadyScheduled();
 
         //turns off text sequence objects
         sentContainer1.SetActive(false);
@@ -232,10 +236,28 @@ public class PhoneContacts : MonoBehaviour
         
         textSequence++;
         travelGuide.SetActive(false);
+        AlreadyScheduled();
         dateCalendar.SetActive(true);
         calendarFocus.SetActive(true);
         
-        //NextText();
+        //sets a string for later use in constructing the date offer text message
+        if(locationNumber == 0)
+        {
+            textedLocation = " botanical gardens ";
+        }
+        else if(locationNumber == 1)
+        {
+            textedLocation = " bar ";
+        }
+        else if(locationNumber == 2)
+        {
+            textedLocation = " arcade ";
+        }
+        else if(locationNumber== 3)
+        {
+            textedLocation = " aquarium ";
+        }
+        
         
     }
 
@@ -249,13 +271,129 @@ public class PhoneContacts : MonoBehaviour
         
         //establishes which of the 28 days has become a date event day
         dateModifier = dayNumber;
-        
+
+        //sets a string for later use in constructing the date offer text message
+        if(dayNumber == 0)
+        {
+            textedDay = "1st";
+        }
+        else if (dayNumber == 1)
+        {
+            textedDay = "2nd";
+        }
+        else if (dayNumber == 2)
+        {
+            textedDay = "3rd";
+        }
+        else if (dayNumber == 3)
+        {
+            textedDay = "4th";
+        }
+        else if (dayNumber == 4)
+        {
+            textedDay = "5th";
+        }
+        else if (dayNumber == 5)
+        {
+            textedDay = "6th";
+        }
+        else if (dayNumber == 6)
+        {
+            textedDay = "7th";
+        }
+        else if (dayNumber == 7)
+        {
+            textedDay = "8th";
+        }
+        else if (dayNumber == 8)
+        {
+            textedDay = "9th";
+        }
+        else if (dayNumber == 9)
+        {
+            textedDay = "10th";
+        }
+        else if (dayNumber == 10)
+        {
+            textedDay = "11th";
+        }
+        else if (dayNumber == 11)
+        {
+            textedDay = "12th";
+        }
+        else if (dayNumber == 12)
+        {
+            textedDay = "13th";
+        }
+        else if (dayNumber == 13)
+        {
+            textedDay = "14th";
+        }
+        else if (dayNumber == 14)
+        {
+            textedDay = "15th";
+        }
+        else if (dayNumber == 15)
+        {
+            textedDay = "16th";
+        }
+        else if (dayNumber == 16)
+        {
+            textedDay = "17th";
+        }
+        else if (dayNumber == 17)
+        {
+            textedDay = "18th";
+        }
+        else if (dayNumber == 18)
+        {
+            textedDay = "19th";
+        }
+        else if (dayNumber == 19)
+        {
+            textedDay = "20th";
+        }
+        else if (dayNumber == 20)
+        {
+            textedDay = "21st";
+        }
+        else if (dayNumber == 21)
+        {
+            textedDay = "22nd";
+        }
+        else if (dayNumber == 22)
+        {
+            textedDay = "23rd";
+        }
+        else if (dayNumber == 23)
+        {
+            textedDay = "24th";
+        }
+        else if (dayNumber == 24)
+        {
+            textedDay = "25th";
+        }
+        else if (dayNumber == 25)
+        {
+            textedDay = "26th";
+        }
+        else if (dayNumber == 26)
+        {
+            textedDay = "27th";
+        }
+        else if (dayNumber == 27)
+        {
+            textedDay = "28th";
+        }
+
+
         NextText();
     }
 
     public void LocationOffer()
     {
         sentContainer2.SetActive(true);
+        TextSentence();
         sentText2.text = text3Content;
         textSequence++;
     }
@@ -270,5 +408,37 @@ public class PhoneContacts : MonoBehaviour
         //updates Day Manager to set the selected date day as a date event day
         dayManager.days[dateModifier] = 2;
         
+
+    }
+
+    //formulates the date offer text to include the players inputted location and day of the month
+    public void TextSentence()
+    {
+        text3Content = "How about the" + textedLocation + "on the " + textedDay + "?";
+    }
+
+
+    //checks what days of the month have dates scheduled and deactivates the associated buttons
+    public void AlreadyScheduled()
+    {
+        for (int i = 0; i < allNPCs.Length; i++)
+        {
+            if(allNPCs[i].scheduledDay < 0)
+            {
+                continue;
+            }
+            for (int f = 0; f < calendarButtons.Length; f++)
+            {
+
+                if (allNPCs[i].scheduledDay == f)
+                {
+                    
+                    calendarButtons[f].SetActive(false);
+                    break;
+                }
+
+            }
+        }
+
     }
 }

@@ -20,8 +20,8 @@ MonoBehaviour:
   neutralFace: {fileID: 0}
   angryFace: {fileID: 21300000, guid: 8565eb902939375409742d64fa2deea5, type: 3}
   sadFace: {fileID: -1667447871, guid: 0383ccfaa37ac944499e0b00d07d7114, type: 3}
-  scheduledLocation: 0
-  scheduledDay: 0
+  scheduledLocation: 2
+  scheduledDay: -1
   scheduledNPC: 4
   angerThreshold: 10
   unimpressedThreshold: 30

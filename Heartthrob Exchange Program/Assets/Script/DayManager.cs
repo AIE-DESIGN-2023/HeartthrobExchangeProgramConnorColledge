@@ -26,7 +26,7 @@ public class DayManager : MonoBehaviour
             currentDay = 0;
         }
         Debug.Log(days[currentDay].ToString());
-        dateDisplay.text = (currentDay + 1).ToString(); 
+
     }
 
     public void EventManager()
@@ -51,5 +51,6 @@ public class DayManager : MonoBehaviour
     public void Update()
     {
         EventManager();
+        dateDisplay.text = (currentDay + 1).ToString();
     }
 }

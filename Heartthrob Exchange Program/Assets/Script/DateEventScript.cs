@@ -364,6 +364,7 @@ public class DateEventScript : MonoBehaviour
             impressionQuality = "bad";
         }
         UnscheduleDate();
+        dayManager.currentDay++;
     }
 
 
@@ -389,8 +390,9 @@ public class DateEventScript : MonoBehaviour
     //resets the scheduled date
     public void UnscheduleDate()
     {
-        currentNPC.scheduledDay = 0;
+        currentNPC.scheduledDay = -1;
         dayManager.days[currentDay] = 0;
+        
     }
 
 
