@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Data", menuName = "ScriptableObjects/ActivityScriptableObject", order = 2)]
 public class ActivityScriptableObject : ScriptableObject 
 {
+    //establishes stat types that scriptable can manipulate
     public enum PlayerStats
     {
         stress,
@@ -17,6 +18,10 @@ public class ActivityScriptableObject : ScriptableObject
         confidence,
         appearance
     }
+
+    //array that lists each stat type seperately
     public PlayerStats[] playerStats;
+
+    //int array listed against playerStats array to determine their incremental/decremental value
     public int[] value;
 }
