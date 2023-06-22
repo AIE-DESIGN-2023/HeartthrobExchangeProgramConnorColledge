@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.UI;
+
 using UnityEngine;
 using static ActivityScriptableObject;
 
@@ -11,7 +11,6 @@ public class NPCScriptableObject : ScriptableObject
 
     public string npcName;
     public int npcAffinity;
-    
 
     //Manages sprites
     [Space]
