@@ -278,7 +278,7 @@ public class DateEventScript : MonoBehaviour
             {
                 npcFace.sprite = currentNPC.happyFace;
             }
-            else if (currentNPC.gardenResponseAffinity[buttonNumber] < 10)
+            else if (currentNPC.gardenResponseAffinity[buttonNumber] > 10)
             {
                 npcFace.sprite = currentNPC.blushingFace;
             }
@@ -301,7 +301,7 @@ public class DateEventScript : MonoBehaviour
             {
                 npcFace.sprite = currentNPC.happyFace;
             }
-            else if (currentNPC.barResponseAffinity[buttonNumber] < 10)
+            else if (currentNPC.barResponseAffinity[buttonNumber] > 10)
             {
                 npcFace.sprite = currentNPC.blushingFace;
             }
@@ -323,7 +323,7 @@ public class DateEventScript : MonoBehaviour
             {
                 npcFace.sprite = currentNPC.happyFace;
             }
-            else if (currentNPC.arcadeResponseAffinity[buttonNumber] < 10)
+            else if (currentNPC.arcadeResponseAffinity[buttonNumber] > 10)
             {
                 npcFace.sprite = currentNPC.blushingFace;
             }
@@ -345,7 +345,7 @@ public class DateEventScript : MonoBehaviour
             {
                 npcFace.sprite = currentNPC.happyFace;
             }
-            else if (currentNPC.aquariumResponseAffinity[buttonNumber] < 10)
+            else if (currentNPC.aquariumResponseAffinity[buttonNumber] > 10)
             {
                 npcFace.sprite = currentNPC.blushingFace;
             }
