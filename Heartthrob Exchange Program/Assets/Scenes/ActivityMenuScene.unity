@@ -170,8 +170,6 @@ MonoBehaviour:
   conversationText: {fileID: 1930531220}
   confidenceText: {fileID: 893351126}
   appearanceText: {fileID: 1763027258}
-  allNPCs: []
-  currentNPC: {fileID: 0}
 --- !u!4 &6819092
 Transform:
   m_ObjectHideFlags: 0
@@ -5673,7 +5671,6 @@ MonoBehaviour:
   receivedText2: {fileID: 1249261631}
   text1Content: Yo! I want to do a date on you!
   text2Content: When and where?
-  text3Content: How does the BLARGHBAH sound??
   text4Content: I cannot think of a good enough excuse to say no.
   dateModifier: 0
 --- !u!4 &462436997
@@ -16530,8 +16527,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1600, y: 900}
+  m_AnchoredPosition: {x: -105.672, y: 0}
+  m_SizeDelta: {x: 1388.656, y: 900}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1509713036
 MonoBehaviour:
@@ -17278,10 +17275,10 @@ RectTransform:
   m_Father: {fileID: 1509713035}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 354.74023}
-  m_SizeDelta: {x: 1600, y: 190.5195}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -95.259766}
+  m_SizeDelta: {x: 0, y: 190.51953}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1565779477
 MonoBehaviour:

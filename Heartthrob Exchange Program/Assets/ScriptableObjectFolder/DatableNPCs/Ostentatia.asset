@@ -13,14 +13,13 @@ MonoBehaviour:
   m_Name: Ostentatia
   m_EditorClassIdentifier: 
   npcName: Ostentatia
-  npcAffinity: 65
-  bodySprite: {fileID: 21300000, guid: 3fbca6617109ac74686e3a826182eaec, type: 3}
-  happyFace: {fileID: 21300000, guid: 6a33527ad1a30d24db7ca371b772d4c8, type: 3}
-  blushingFace: {fileID: 21300000, guid: dfa163634d4e57644ad7f75dd4eaddb0, type: 3}
-  neutralFace: {fileID: 21300000, guid: d6d83788c68b3404eb8046b5fe2822d4, type: 3}
-  angryFace: {fileID: 21300000, guid: 8565eb902939375409742d64fa2deea5, type: 3}
-  sadFace: {fileID: 21300000, guid: 400faba25a4a7134b813c951f86dc591, type: 3}
-  scheduledLocation: 2
+  npcAffinity: 90
+  defaultSprite: {fileID: 21300000, guid: f4901522d22a6f045b51313d7aa8cba0, type: 3}
+  happySprite: {fileID: 21300000, guid: 20e6fdb74271c404c86deada16786c41, type: 3}
+  blushingSprite: {fileID: 21300000, guid: 1ba3492eda927db439f1b0aa034bf18d, type: 3}
+  angrySprite: {fileID: 21300000, guid: 9198260d0dd1c924eb5bc36696350e8d, type: 3}
+  sadSprite: {fileID: 21300000, guid: 7beab08fda6f3734db50dc4573fbde54, type: 3}
+  scheduledLocation: 3
   scheduledDay: -1
   scheduledNPC: 6
   angerThreshold: 10
@@ -28,8 +27,8 @@ MonoBehaviour:
   sadThreshold: 45
   neutralThreshold: 90
   amusedThreshold: 110
-  happyThreshold: 140
-  blushingThreshold: 240
+  happyThreshold: 130
+  blushingThreshold: 200
   dateQuestion: My my! A date? Where would we be going?
   dateApproval: How could I resist such a tempting proposal ;)
   gardensDialoguePromptText:

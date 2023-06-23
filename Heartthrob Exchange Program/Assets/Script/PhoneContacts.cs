@@ -160,6 +160,7 @@ public class PhoneContacts : MonoBehaviour
         receivedContainer1.SetActive(false);
         receivedContainer2.SetActive(false);
         textsContainer.SetActive (false);
+        textSequence = 0;
     }
 
     public void OpenTexts()
@@ -221,10 +222,20 @@ public class PhoneContacts : MonoBehaviour
 
     public void LocationQuestion()
     {
-        receivedContainer1.SetActive(true);
-        receivedText1.text = currentNPC.dateQuestion;
-        travelGuide.SetActive(true);
-        sendButton.SetActive(false);
+        if (currentNPC.scheduledDay == -1)
+        {
+            receivedContainer1.SetActive(true);
+            receivedText1.text = currentNPC.dateQuestion;
+            travelGuide.SetActive(true);
+            sendButton.SetActive(false);
+        }
+        else
+        {
+            receivedContainer1.SetActive(true);
+            receivedText1.text = "You're suffocating me, Jerry!";
+            sendButton.SetActive(false);
+            returnButton.SetActive(true);
+        }
         
     }
 
@@ -435,7 +446,7 @@ public class PhoneContacts : MonoBehaviour
                     
                     calendarButtons[f].SetActive(false);
                     break;
-                }
+                }                
 
             }
         }

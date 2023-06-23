@@ -16,12 +16,11 @@ public class NPCScriptableObject : ScriptableObject
     [Space]
     [Header("Sprite Manager")]
     [Space]
-    public Sprite bodySprite;
-    public Sprite happyFace;
-    public Sprite blushingFace;
-    public Sprite neutralFace;
-    public Sprite angryFace;
-    public Sprite sadFace;
+    public Sprite defaultSprite;
+    public Sprite happySprite;
+    public Sprite blushingSprite;
+    public Sprite angrySprite;
+    public Sprite sadSprite;
 
     //Variables to determines scheduled dates characteristics
     [Space]

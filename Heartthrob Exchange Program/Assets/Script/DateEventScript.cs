@@ -13,7 +13,6 @@ public class DateEventScript : MonoBehaviour
     public int dayCheck;
     public GameObject npcContainer;
     public Image npcSprite;
-    public Image npcFace;
     public GameObject nextButton;
     public GameObject returnButton;
     public int dialogueSequence;
@@ -24,6 +23,7 @@ public class DateEventScript : MonoBehaviour
 
     private DayManager dayManager;
     public int currentDay;
+    public PhoneContacts phoneContacts;
 
     //Location background variables
     [Space]
@@ -54,7 +54,9 @@ public class DateEventScript : MonoBehaviour
     void Start()
     {
         dayManager = FindObjectOfType<DayManager>();
+        phoneContacts = FindObjectOfType<PhoneContacts>();
         currentDay = dayManager.currentDay;
+        phoneContacts.calendarButtons[currentDay].SetActive(true);
         npcContainer.SetActive(false);
         responseTop.SetActive(false);
         responseMiddle.SetActive(false);
@@ -141,29 +143,28 @@ public class DateEventScript : MonoBehaviour
     public void DateArrives()
     {
         npcContainer.SetActive(true);
-        npcSprite.sprite = currentNPC.bodySprite;
         nameDisplay.text = currentNPC.npcName;
 
         //checks NPC's affinity score against their emotion thresholds to determine NPC's facial emotion
         if(currentNPC.npcAffinity >= 0 && currentNPC.npcAffinity < currentNPC.sadThreshold)
         {
-            npcFace.sprite = currentNPC.angryFace;
+            npcSprite.sprite = currentNPC.angrySprite;
         }
         else if(currentNPC.npcAffinity >= currentNPC.sadThreshold && currentNPC.npcAffinity < currentNPC.neutralThreshold)
         {
-            npcFace.sprite = currentNPC.sadFace;
+            npcSprite.sprite = currentNPC.sadSprite;
         }
         else if(currentNPC.npcAffinity >= currentNPC.neutralThreshold && currentNPC.npcAffinity < currentNPC.happyThreshold)
         {
-            npcFace.sprite = currentNPC.neutralFace;
+            npcSprite.sprite = currentNPC.defaultSprite;
         }
         else if(currentNPC.npcAffinity >= currentNPC.happyThreshold && currentNPC.npcAffinity < currentNPC.blushingThreshold)
         {
-            npcFace.sprite = currentNPC.happyFace;
+            npcSprite.sprite = currentNPC.happySprite;
         }
         else if(currentNPC.npcAffinity >= currentNPC.blushingThreshold)
         {
-            npcFace.sprite = currentNPC.blushingFace;
+            npcSprite.sprite = currentNPC.blushingSprite;
         }
 
 
@@ -268,19 +269,19 @@ public class DateEventScript : MonoBehaviour
             //This could be it's own function if you clean up DialogueChosen function to check for a location value once
             if(currentNPC.gardenResponseAffinity[buttonNumber] <= 0)
             {
-                npcFace.sprite = currentNPC.angryFace;
+                npcSprite.sprite = currentNPC.angrySprite;
             }
             else if(currentNPC.gardenResponseAffinity[buttonNumber] > 0 && currentNPC.gardenResponseAffinity[buttonNumber] <= 5)
             {
-                npcFace.sprite = currentNPC.neutralFace;
+                npcSprite.sprite = currentNPC.defaultSprite;
             }
             else if(currentNPC.gardenResponseAffinity[buttonNumber] > 5 && currentNPC.gardenResponseAffinity[buttonNumber] <= 10)
             {
-                npcFace.sprite = currentNPC.happyFace;
+                npcSprite.sprite = currentNPC.happySprite;
             }
             else if (currentNPC.gardenResponseAffinity[buttonNumber] > 10)
             {
-                npcFace.sprite = currentNPC.blushingFace;
+                npcSprite.sprite = currentNPC.blushingSprite;
             }
 
         }
@@ -291,19 +292,19 @@ public class DateEventScript : MonoBehaviour
 
             if (currentNPC.barResponseAffinity[buttonNumber] <= 0)
             {
-                npcFace.sprite = currentNPC.angryFace;
+                npcSprite.sprite = currentNPC.angrySprite;
             }
             else if (currentNPC.barResponseAffinity[buttonNumber] > 0 && currentNPC.barResponseAffinity[buttonNumber] <= 5)
             {
-                npcFace.sprite = currentNPC.neutralFace;
+                npcSprite.sprite = currentNPC.defaultSprite;
             }
             else if (currentNPC.barResponseAffinity[buttonNumber] > 5 && currentNPC.barResponseAffinity[buttonNumber] <= 10)
             {
-                npcFace.sprite = currentNPC.happyFace;
+                npcSprite.sprite = currentNPC.happySprite;
             }
             else if (currentNPC.barResponseAffinity[buttonNumber] > 10)
             {
-                npcFace.sprite = currentNPC.blushingFace;
+                npcSprite.sprite = currentNPC.blushingSprite;
             }
         }
         else if (locationValue == 2)
@@ -313,19 +314,19 @@ public class DateEventScript : MonoBehaviour
 
             if (currentNPC.arcadeResponseAffinity[buttonNumber] <= 0)
             {
-                npcFace.sprite = currentNPC.angryFace;
+                npcSprite.sprite = currentNPC.angrySprite;
             }
             else if (currentNPC.arcadeResponseAffinity[buttonNumber] > 0 && currentNPC.arcadeResponseAffinity[buttonNumber] <= 5)
             {
-                npcFace.sprite = currentNPC.neutralFace;
+                npcSprite.sprite = currentNPC.defaultSprite;
             }
             else if (currentNPC.arcadeResponseAffinity[buttonNumber] > 5 && currentNPC.arcadeResponseAffinity[buttonNumber] <= 10)
             {
-                npcFace.sprite = currentNPC.happyFace;
+                npcSprite.sprite = currentNPC.happySprite;
             }
             else if (currentNPC.arcadeResponseAffinity[buttonNumber] > 10)
             {
-                npcFace.sprite = currentNPC.blushingFace;
+                npcSprite.sprite = currentNPC.blushingSprite;
             }
         }
         else if (locationValue == 3)
@@ -335,19 +336,19 @@ public class DateEventScript : MonoBehaviour
 
             if (currentNPC.aquariumResponseAffinity[buttonNumber] <= 0)
             {
-                npcFace.sprite = currentNPC.angryFace;
+                npcSprite.sprite = currentNPC.angrySprite;
             }
             else if (currentNPC.aquariumResponseAffinity[buttonNumber] > 0 && currentNPC.aquariumResponseAffinity[buttonNumber] <= 5)
             {
-                npcFace.sprite = currentNPC.neutralFace;
+                npcSprite.sprite = currentNPC.defaultSprite;
             }
             else if (currentNPC.aquariumResponseAffinity[buttonNumber] > 5 && currentNPC.aquariumResponseAffinity[buttonNumber] <= 10)
             {
-                npcFace.sprite = currentNPC.happyFace;
+                npcSprite.sprite = currentNPC.happySprite;
             }
             else if (currentNPC.aquariumResponseAffinity[buttonNumber] > 10)
             {
-                npcFace.sprite = currentNPC.blushingFace;
+                npcSprite.sprite = currentNPC.blushingSprite;
             }
         }
         dialogueSequence = 2;
@@ -395,5 +396,8 @@ public class DateEventScript : MonoBehaviour
         
     }
 
-
+    public void ResetButton()
+    {
+        phoneContacts.calendarButtons[currentDay].SetActive(true);
+    }
 }

@@ -13,14 +13,13 @@ MonoBehaviour:
   m_Name: Susannah
   m_EditorClassIdentifier: 
   npcName: Susannah
-  npcAffinity: 43
-  bodySprite: {fileID: 21300000, guid: d9ec75763a8c0814c988e6185b9a6853, type: 3}
-  happyFace: {fileID: 21300000, guid: 6a33527ad1a30d24db7ca371b772d4c8, type: 3}
-  blushingFace: {fileID: 21300000, guid: dfa163634d4e57644ad7f75dd4eaddb0, type: 3}
-  neutralFace: {fileID: 21300000, guid: d6d83788c68b3404eb8046b5fe2822d4, type: 3}
-  angryFace: {fileID: 21300000, guid: 8565eb902939375409742d64fa2deea5, type: 3}
-  sadFace: {fileID: 21300000, guid: 400faba25a4a7134b813c951f86dc591, type: 3}
-  scheduledLocation: 0
+  npcAffinity: 90
+  defaultSprite: {fileID: 21300000, guid: 93208a5ad8681c944985b0661eefc9a7, type: 3}
+  happySprite: {fileID: 21300000, guid: 92c47b3e0dc7c68409e36cbb32efd854, type: 3}
+  blushingSprite: {fileID: 21300000, guid: 738083de6bbc70043b207edc69e08d12, type: 3}
+  angrySprite: {fileID: 21300000, guid: 8e4bef74b1a8b5a4e98df0206b935c44, type: 3}
+  sadSprite: {fileID: 21300000, guid: ed1a05fa7dc471743b3d527390046833, type: 3}
+  scheduledLocation: 3
   scheduledDay: -1
   scheduledNPC: 5
   angerThreshold: 10
@@ -29,7 +28,7 @@ MonoBehaviour:
   neutralThreshold: 90
   amusedThreshold: 110
   happyThreshold: 140
-  blushingThreshold: 240
+  blushingThreshold: 170
   dateQuestion: Hmmm... that depends on what we'd be doing.
   dateApproval: I think I can make time for that. Looking forward to it.
   gardensDialoguePromptText:

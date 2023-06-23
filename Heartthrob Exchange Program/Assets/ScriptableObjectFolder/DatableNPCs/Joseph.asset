@@ -13,13 +13,12 @@ MonoBehaviour:
   m_Name: Joseph
   m_EditorClassIdentifier: 
   npcName: Joseph
-  npcAffinity: 50
-  bodySprite: {fileID: 21300000, guid: bc1c61ca6578403488f57fb638acf362, type: 3}
-  happyFace: {fileID: 21300000, guid: 6a33527ad1a30d24db7ca371b772d4c8, type: 3}
-  blushingFace: {fileID: 21300000, guid: dfa163634d4e57644ad7f75dd4eaddb0, type: 3}
-  neutralFace: {fileID: 21300000, guid: d6d83788c68b3404eb8046b5fe2822d4, type: 3}
-  angryFace: {fileID: 21300000, guid: 8565eb902939375409742d64fa2deea5, type: 3}
-  sadFace: {fileID: 21300000, guid: 400faba25a4a7134b813c951f86dc591, type: 3}
+  npcAffinity: 90
+  defaultSprite: {fileID: 21300000, guid: 0d5e7c6f6a2f6ab458c363f3ad8a16b7, type: 3}
+  happySprite: {fileID: 21300000, guid: ae5317e56e804cd49816899b629926f7, type: 3}
+  blushingSprite: {fileID: 21300000, guid: 2840c3e2785b2b649b7a65976190056d, type: 3}
+  angrySprite: {fileID: 21300000, guid: 91f30081783cc3243b94580c1815187b, type: 3}
+  sadSprite: {fileID: 21300000, guid: ea201e3a98a968841a432aae185cc4b5, type: 3}
   scheduledLocation: 2
   scheduledDay: -1
   scheduledNPC: 4

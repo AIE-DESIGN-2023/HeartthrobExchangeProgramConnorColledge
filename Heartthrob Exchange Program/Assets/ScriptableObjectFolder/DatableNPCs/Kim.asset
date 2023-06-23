@@ -13,13 +13,12 @@ MonoBehaviour:
   m_Name: Kim
   m_EditorClassIdentifier: 
   npcName: Kim
-  npcAffinity: 85
-  bodySprite: {fileID: 21300000, guid: 92cf38cdb2c8a214aba73d45c63ff459, type: 3}
-  happyFace: {fileID: 21300000, guid: 6a33527ad1a30d24db7ca371b772d4c8, type: 3}
-  blushingFace: {fileID: 21300000, guid: dfa163634d4e57644ad7f75dd4eaddb0, type: 3}
-  neutralFace: {fileID: 21300000, guid: d6d83788c68b3404eb8046b5fe2822d4, type: 3}
-  angryFace: {fileID: 21300000, guid: 8565eb902939375409742d64fa2deea5, type: 3}
-  sadFace: {fileID: 21300000, guid: 400faba25a4a7134b813c951f86dc591, type: 3}
+  npcAffinity: 55
+  defaultSprite: {fileID: 21300000, guid: 162d59163cd0f8b48bf49321313b1800, type: 3}
+  happySprite: {fileID: 21300000, guid: b43c71dc95864d94589439609bab00bb, type: 3}
+  blushingSprite: {fileID: 21300000, guid: f2d8b55888e692b4087a1ce71d53996f, type: 3}
+  angrySprite: {fileID: 21300000, guid: 26abd1de4cccc9442b51ccc614fc00d3, type: 3}
+  sadSprite: {fileID: 21300000, guid: 41d5137d75a3222419cc36f36d9a7407, type: 3}
   scheduledLocation: 2
   scheduledDay: -1
   scheduledNPC: 1
